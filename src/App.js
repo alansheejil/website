@@ -2,13 +2,18 @@
 import './App.scss';
 
 //Components
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
+import Navigation from './Components/Navigation';
+import Carousel from './Components/Carousel';
+import RentalOffer from './Components/RentalOffer';
+import AboutUs from './Components/AboutUs';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navigation />
+      <Carousel />
+      <RentalOffer/>
+      <AboutUs />
     </div>
   );
 }

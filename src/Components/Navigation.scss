@@ -2,6 +2,7 @@ $mainColor : #05a0e3;
 
 nav{
     overflow-x: hidden;
+    padding: 1em 0;
     .nav-items{
         display: flex;
         justify-content: space-around;
@@ -34,45 +35,4 @@ nav{
 
 .active > a{
     color: $mainColor !important;
-}
-
-/*SLIDER*/
-.slider{
-    width: 100%;
-}
-
-
-.next{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    right: 3%;
-    z-index: 1;
-}
-
-.prev{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    left: 3%;
-    z-index: 1;
-}
-
-.slick-dots{
-    bottom: 30px;
-
-    li button:before{
-        font-size: 20px;
-        color:white;
-        opacity: 1;
-    }
-
-    .slick-active{
-        button::before{
-            color:$mainColor !important;
-            opacity: 1 !important;
-        }
-    }
 }
