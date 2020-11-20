@@ -1,0 +1,89 @@
+$mainColor : #05a0e3;
+
+.portfolioSlider{
+    .slider{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .slick-track{
+        padding-bottom: 2em;
+    }
+    
+    .slick-list {
+        margin:  0 auto;
+        width: 94%;
+        padding: 0 10px;
+    
+        .slick-slide {
+            margin: 0 15px;
+            border-radius: 0.5em;
+            width: 4.3%;
+            -webkit-box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.55); 
+            box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.55);
+    
+            .text{
+                padding: 2em;
+
+                p:first-of-type{
+                    color:$mainColor;
+                    margin:0;
+                }
+
+                h4{
+                    font-size: 1.3em;
+                    margin-top: 0.2em;
+                    margin-bottom: 0;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $mainColor;
+                    border: 0.12em solid $mainColor;
+                    border-radius: 0.3em;
+                    display: block;
+                    width: 40%;
+                    padding: 0.5em 1em;
+                    text-align: center;
+                    margin: 0 auto;
+                    transition: 0.1s ease-in-out;
+
+                    &:hover{
+                        background-color: $mainColor;
+                        color:white;
+                    }
+                }
+            }
+        
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 0.5em 0.5em 0 0;
+            }
+        }
+    }
+}
+
+.slide{
+    position: relative;
+    outline: none;
+}
+
+.next,.prev{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    fill: $mainColor;
+    background-color:white;
+    border-radius: 50%;
+}
+
+.next{
+    right: 0.5%;
+}
+
+.prev{
+    left: 1.5%;
+}

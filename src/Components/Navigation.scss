@@ -29,6 +29,11 @@ nav{
             padding: 0.35em 1em;
             color: $mainColor;
             text-decoration: none;
+
+            &:hover{
+                background-color: $mainColor;
+                color:white;
+            }
         }
     }
 }

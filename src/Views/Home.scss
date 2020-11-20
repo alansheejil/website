@@ -1,0 +1,168 @@
+$mainColor : #05a0e3;
+
+.rentalOffer{
+    background-color: $mainColor;
+    padding: 1.5em;
+    border-radius: 0.2em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    
+    p{
+        margin: 0;
+        color:white;
+        font-size: 1.15em;
+        font-weight: 400;
+    }
+
+    a{
+        text-decoration: none;
+        color:white;
+        font-weight: 300;
+        font-size: 1.15em;
+        border: 0.05em solid white;
+        padding: 0.3em 1.8em;
+        border-radius: 0.2em;
+        transition: 0.1s ease-in-out;
+
+        &:hover{
+            background-color: white;
+            color:$mainColor;
+        }
+    }
+}
+
+.aboutUs{
+    background: url('../Icons/square.svg') no-repeat;
+    background-position-x: 90%;
+    background-position-y:center;
+    background-size: 10%;
+    padding: 3em 0 3em 0;
+
+    h3{
+        font-size: 1.5em;
+        transform:translateX(2%);
+    }
+
+    h2{
+        font-size: 3em;
+        margin-bottom: 2em;
+    }
+
+    .text{
+        transform:translateX(7%);
+        max-width: 500px;
+        p{
+            line-height: 1.5em;
+        }
+    
+        a{
+            text-decoration: none;
+            color:black;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    #square{
+        fill:$mainColor;
+        width:10%;
+        transform:rotate(60deg);
+    }
+}
+
+.certificates{
+    padding: 3em 0 3em 0;
+
+    h2{
+        font-size: 3em;
+        margin-bottom: 2em;
+    }
+
+    .card-container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+
+        .card{
+            width: 23%;
+            padding: 1.5em;
+            background-color:white;
+            border-radius: .5em;
+            -webkit-box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.55); 
+            box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.55);
+
+            a{
+                text-align: center;
+                display: block;
+                text-decoration: none;
+                color:black;
+                transition: .1s ease-in-out;
+
+                &:first-of-type{
+                    color:$mainColor;
+                    width: 50%;
+                    text-decoration: none;
+                    margin-top: 3em;
+                    border:0.15em solid $mainColor;
+                    border-radius: 0.3em;
+                    margin:0 auto;
+                    margin-top: 2em;
+                    padding: 0.5em 1em;
+
+                    &:hover{
+                        background-color: $mainColor;
+                        color:white;
+                    }
+                }
+
+                &:last-of-type{
+                    font-size: .8em;
+                    margin-top: .8em;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 50%;
+            }
+            
+            h3{
+                color:$mainColor;
+                font-size: 1.5em;
+                margin-bottom: 0.2em;
+                margin-top: 0;
+            }
+
+            p{
+                font-size: .9em;
+                margin-top: 0;
+                margin-bottom: 2em;
+            }
+        }
+    }
+}
+
+.portfolio{
+    padding: 3em 0;
+
+    h2{
+        font-size: 3em;
+    }
+
+    h3{
+        font-size: 2em;
+        margin :2em;
+    }
+}
