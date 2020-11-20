@@ -7,6 +7,7 @@ import './Home.scss';
 import Navigation from '../Components/Navigation';
 import Carousel from '../Components/Carousel';
 import PortfolioSlider from '../Components/PortfolioSlider';
+import Footer from '../Components/Footer';
 
 //Certificate paths
 import ISO9001 from '../Img/iso9001.jpg';
@@ -75,7 +76,49 @@ function Home(){
                 </div>
             </div>
 
-            
+            <div className="allWorks">
+                <div className="container">
+                    <h3>Chcete vidieť všetky naše práce? </h3> 
+                    <a href="#">Zobraziť celé portfólio</a>  
+                </div>        
+            </div>
+
+            <div className="contact">
+                <div className="container">
+                    <h2>Kontakt</h2>
+
+                    <div className="wrapper">
+                        <div className="info">
+                            <h4>Kde sme</h4>
+                            <p>Sama Chalupku 564/5</p>
+                            <p>927 00</p>
+                            <p>Narnia</p>
+
+                            <h4>Kontakt</h4>
+                            <p>0900 000 000</p>
+                            <p>email@company.com</p>
+
+                            <h4>Pracovná doba</h4>
+                            <p>Pondelok - piatok</p>
+                            <p>8:00 - 18:00</p>
+                        </div>
+
+                        <div className="form">
+                            <form>
+                                <input type="text" placeholder="Name" />
+                                <input type="email" placeholder="Email" />
+
+                                <textarea placeholder="Message"></textarea>
+
+                                <input type="submit" value="Odoslať" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <Footer />
+
         </div>
     )
 }
