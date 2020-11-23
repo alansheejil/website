@@ -10,7 +10,7 @@ $mainColor : #05a0e3;
     width: 40px;
 }
 
-#square{
+#square,#circle{
     fill:none;
     stroke:$mainColor;
     stroke-width: .6;
@@ -20,6 +20,7 @@ $mainColor : #05a0e3;
 
 h2{
     position: relative;
+    z-index: 2;
 
     #dots{
         z-index: -1;
@@ -32,8 +33,8 @@ h2{
         url('../Img/wave2-01.svg');
 
     background-position:
-        top 27% left 0%, /* this positions the first image */
-        top 65% left 0%; /* this positions the second image */
+        top 27% left 0%,
+        top 65% left 0%;
 
     background-repeat: no-repeat;
 }
@@ -223,6 +224,7 @@ h2{
     padding: 3em;
     text-align: center;
     margin-top: 3em;
+    position: relative;
 
     h3{
         color:white;
@@ -238,7 +240,17 @@ h2{
         padding: .8em 3em;
         border-radius: .3em;
     }
+
+    #circle{
+        position: absolute;
+        top:-40%;
+        right: 40%;
+        width: 100px;
+        z-index: -1;
+    }
 }
+
+
 
 /*Contact*/
 .contact{
@@ -298,6 +310,7 @@ h2{
                 border-radius: .3em;
                 outline: none;
                 font-size: 1.2em;
+                font-family: inherit;
                 -webkit-box-shadow: 0px 2px 7px -5px #000000; 
                 box-shadow: 0px 2px 7px -5px #000000;
 

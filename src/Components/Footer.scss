@@ -1,3 +1,5 @@
+$mainColor : #05a0e3;
+
 .footer{
     background-color: #eeeeee;
     transform: translateY(50%);
@@ -46,7 +48,30 @@
         }
 
         p:first-of-type{
-            font-weight: bold;
+            font-weight: 400;
+        }
+
+        .back-to-top{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            p:hover{
+                cursor: pointer;
+            }
+        }
+
+        #backToTop{
+            width: 30px;
+            height: 30px;
+            stroke:$mainColor;
+            fill:$mainColor;
+            stroke-width:15;
+            margin-right: 1em;
+
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 }

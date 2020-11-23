@@ -3,6 +3,9 @@ import React from 'react';
 //Styles
 import './Footer.scss';
 
+//Icons
+import BackToTop from '../Icons/BackToTop';
+
 function Footer(){
 
     //Scroll back to top
@@ -37,16 +40,20 @@ function Footer(){
 
                     <div className="column">
                         <h4>Adresa</h4>
-                        <p>Sama Chalupku 564/5</p>
-                        <p>927 00</p>
-                        <p>Narnia</p>
+                        <p>Kukučínova 533/28</p>
+                        <p>927 01</p>
+                        <p>Šaľa</p>
                     </div>
                 </div>
                 
                 <div className="copyright">
                     <p>&copy; Company name</p>
 
-                    <p onClick={scrollToTop}>Späť na vrch</p>    
+                    <div className="back-to-top">
+                        <BackToTop scrollToTop={scrollToTop} />
+                        <p onClick={scrollToTop}>Späť na vrch</p> 
+                    </div>   
+                       
                 </div> 
             </div> 
         </div>

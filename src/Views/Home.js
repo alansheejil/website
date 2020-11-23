@@ -17,6 +17,7 @@ import ISO18001 from '../Img/iso18001.jpg';
 //Icons
 import Dots from '../Icons/Dots';
 import Square from '../Icons/Square';
+import Circle from '../Icons/Circle';
 
 function Home(){
     return(
@@ -84,6 +85,8 @@ function Home(){
             </div>
 
             <div className="allWorks">
+                <Circle />
+
                 <div className="container">
                     <h3>Chcete vidieť všetky naše práce? </h3> 
                     <a href="#">Zobraziť celé portfólio</a>  
@@ -97,9 +100,9 @@ function Home(){
                     <div className="wrapper">
                         <div className="info">
                             <h4>Kde sme</h4>
-                            <p>Sama Chalupku 564/5</p>
-                            <p>927 00</p>
-                            <p>Narnia</p>
+                            <p>Kukučínova 533/28</p>
+                            <p>927 01</p>
+                            <p>Šaľa</p>
 
                             <h4>Kontakt</h4>
                             <p>0900 000 000</p>
