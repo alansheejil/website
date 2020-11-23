@@ -3,6 +3,14 @@ import React from 'react';
 //Styles
 import './Home.scss';
 
+//Font awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+
 //Components
 import Navigation from '../Components/Navigation';
 import Carousel from '../Components/Carousel';
@@ -14,7 +22,7 @@ import ISO9001 from '../Img/iso9001.jpg';
 import ISO14001 from '../Img/iso14001.jpg';
 import ISO18001 from '../Img/iso18001.jpg';
 
-//Icons
+//SVG icons
 import Dots from '../Icons/Dots';
 import Square from '../Icons/Square';
 import Circle from '../Icons/Circle';
@@ -37,7 +45,9 @@ function Home(){
                     <div className="text">
                         <p>Naša spoločnosť bola založená v roku 2004. Od svojho vzniku sme realizovali desiatky stavebných projektov rôzneho charakteru. Cieľom všetkých našich činností je vždy plné uspokojenie požiadaviek a potrieb zákazníka.</p>
 
-                        <a href="#">Zobraziť viac -</a>
+                        <div className="showMore">
+                            <a href="#">Zobraziť viac <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                        </div>
                     </div>
 
                     <Square />
@@ -99,16 +109,25 @@ function Home(){
 
                     <div className="wrapper">
                         <div className="info">
-                            <h4>Kde sme</h4>
+                            <div className="heading">
+                                <FontAwesomeIcon icon={faMapMarkerAlt} />
+                                <h4>Kde sme</h4>
+                            </div>
                             <p>Kukučínova 533/28</p>
                             <p>927 01</p>
                             <p>Šaľa</p>
-
-                            <h4>Kontakt</h4>
+                            
+                            <div className="heading">
+                                <FontAwesomeIcon icon={faPhoneAlt} /> 
+                                <h4>Kontakt</h4>
+                            </div>
                             <p>0900 000 000</p>
                             <p>email@company.com</p>
 
-                            <h4>Pracovná doba</h4>
+                            <div className="heading">
+                                <FontAwesomeIcon icon={faClock} />
+                                <h4>Pracovná doba</h4>
+                            </div>
                             <p>Pondelok - piatok</p>
                             <p>8:00 - 18:00</p>
                         </div>
@@ -120,7 +139,10 @@ function Home(){
 
                                 <textarea placeholder="Message"></textarea>
 
-                                <input type="submit" value="Odoslať" />
+                                <div className="send">
+                                    <FontAwesomeIcon icon={faPaperPlane} />
+                                    <a href="#">Odoslať</a>
+                                </div> 
                             </form>
                         </div>
                     </div>
