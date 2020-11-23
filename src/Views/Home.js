@@ -14,6 +14,10 @@ import ISO9001 from '../Img/iso9001.jpg';
 import ISO14001 from '../Img/iso14001.jpg';
 import ISO18001 from '../Img/iso18001.jpg';
 
+//Icons
+import Dots from '../Icons/Dots';
+import Square from '../Icons/Square';
+
 function Home(){
     return(
         <div className="home">
@@ -27,17 +31,19 @@ function Home(){
                 </div>
 
                 <div className="aboutUs">
-                    <h2>O nás</h2>
+                    <h2>O nás <Dots /></h2>
                     <h3>Company name</h3>
                     <div className="text">
                         <p>Naša spoločnosť bola založená v roku 2004. Od svojho vzniku sme realizovali desiatky stavebných projektov rôzneho charakteru. Cieľom všetkých našich činností je vždy plné uspokojenie požiadaviek a potrieb zákazníka.</p>
 
                         <a href="#">Zobraziť viac -</a>
                     </div>
+
+                    <Square />
                 </div>
 
                 <div className="certificates">
-                    <h2>Certifikáty</h2>
+                    <h2>Certifikáty <Dots /></h2>
                     <div className="card-container">
                         <div className="card">
                             <h3>ISO 9001</h3>
@@ -69,9 +75,10 @@ function Home(){
                 </div>
 
                 <div className="portfolio">
-                    <h2>Portfólio</h2>
+                    <h2>Portfólio <Dots /></h2>
                     <h3>Naše najnovšie práce</h3>
 
+                    <Square />
                     <PortfolioSlider />
                 </div>
             </div>
@@ -85,7 +92,7 @@ function Home(){
 
             <div className="contact">
                 <div className="container">
-                    <h2>Kontakt</h2>
+                    <h2>Kontakt <Dots /></h2>
 
                     <div className="wrapper">
                         <div className="info">
@@ -115,6 +122,8 @@ function Home(){
                         </div>
                     </div>
                 </div>
+
+                <Square />
             </div>
 
             <Footer />

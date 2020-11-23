@@ -2,41 +2,11 @@ import React from 'react';
 
 function Square(){
     return(
-        <svg version="1.1" id="square"  x="0px" y="0px"
-	 viewBox="0 0 60 60" >
-<path d="M0,0v60h60V0H0z M58,58H2V2h56V58z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+        <svg version="1.1" id="square" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            viewBox="0 0 50 50">
 
+        <rect x="7.4" y="8.5" transform="matrix(0.9397 -0.342 0.342 0.9397 -7.2132 9.8369)" class="st0" width="33.8" height="33.8"/>
+        </svg>
     )
 }
 

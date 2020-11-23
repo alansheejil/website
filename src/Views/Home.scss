@@ -1,5 +1,44 @@
 $mainColor : #05a0e3;
 
+/*Icons*/
+#dots{
+    position: absolute;
+    fill: $mainColor;
+    opacity: 50%;
+    top: -5px;
+    left: -10px;
+    width: 40px;
+}
+
+#square{
+    fill:none;
+    stroke:$mainColor;
+    stroke-width: .6;
+    position: absolute;
+    z-index: -1;
+}
+
+h2{
+    position: relative;
+
+    #dots{
+        z-index: -1;
+    }
+}
+
+.home{
+    background-image:
+        url('../Img/wave-01.svg'),
+        url('../Img/wave2-01.svg');
+
+    background-position:
+        top 27% left 0%, /* this positions the first image */
+        top 65% left 0%; /* this positions the second image */
+
+    background-repeat: no-repeat;
+}
+
+/*Rental offer*/
 .rentalOffer{
     background-color: $mainColor;
     padding: 1.5em;
@@ -36,12 +75,10 @@ $mainColor : #05a0e3;
     }
 }
 
+/*About us*/
 .aboutUs{
-    background: url('../Icons/square.svg') no-repeat;
-    background-position-x: 90%;
-    background-position-y:center;
-    background-size: 10%;
     padding: 3em 0 3em 0;
+    position: relative;
 
     h3{
         font-size: 1.5em;
@@ -49,8 +86,9 @@ $mainColor : #05a0e3;
     }
 
     h2{
-        font-size: 3em;
+        font-size: 3.5em;
         margin-bottom: 1em;
+        position: relative;
     }
 
     .text{
@@ -71,17 +109,18 @@ $mainColor : #05a0e3;
     }
 
     #square{
-        fill:$mainColor;
-        width:10%;
-        transform:rotate(60deg);
+        top: 40%;
+        right: 10%;
+        width: 180px;
     }
 }
 
+/*Certificates*/
 .certificates{
     padding: 3em 0 3em 0;
 
     h2{
-        font-size: 3em;
+        font-size: 3.5em;
         margin-bottom: 2em;
     }
 
@@ -154,11 +193,13 @@ $mainColor : #05a0e3;
     }
 }
 
+/*Portfolio*/
 .portfolio{
     padding: 3em 0;
+    position: relative;
 
     h2{
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     h3{
@@ -166,6 +207,13 @@ $mainColor : #05a0e3;
         transform:translateX(7%);
         max-width: 500px;
         margin: 2em 0;
+    }
+
+    #square{
+        top:5%;
+        right: 35%;
+        width: 160px;
+        transform: rotate(40deg);
     }
 }
 
@@ -192,9 +240,12 @@ $mainColor : #05a0e3;
     }
 }
 
+/*Contact*/
 .contact{
+    position: relative;
+
     h2{
-        font-size: 3em;
+        font-size: 3.5em;
         margin:2em 0;
     }
 
@@ -273,5 +324,12 @@ $mainColor : #05a0e3;
                 height: 10em;
             }
         }
+    }
+
+    #square{
+        top:-15%;
+        right: 17%;
+        width: 200px;
+        transform: rotate(40deg);
     }
 }
