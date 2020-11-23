@@ -1,6 +1,6 @@
 # Website for Construction company made in React.js
 
-###Used technologies
+### Used technologies
 
 - React.js
 - Sass
