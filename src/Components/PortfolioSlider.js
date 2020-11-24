@@ -31,7 +31,16 @@ function PortfolioSlider(){
         autoplay:false,
         slidesToShow:3,
         slidesToScroll:3,
-        variableWidth:true
+        variableWidth:true,
+        responsive: [
+            {
+              breakpoint: 1030,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              }
+            }
+          ]
     }
 
     return(

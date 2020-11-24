@@ -1,7 +1,15 @@
 import React from 'react';
 
+//React-router-dom
+import {NavLink} from 'react-router-dom';
+
 //Styles
 import './Navigation.scss';
+
+//Font awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 function Navigation(){
     return(
@@ -9,20 +17,22 @@ function Navigation(){
             <div className="container">
                 <div className="nav-items">
                     <div className="logo">
-                        <h3>LOGO</h3>
+                        <h3>LOGO</h3>  
                     </div>
 
                     <div className="menu">
                         <ul>
-                            <li className="active"><a href="#">Domov</a></li>
-                            <li><a href="#">O nás</a></li>
-                            <li><a href="#">Portfólio</a></li>
-                            <li><a href="#">Kontakt</a></li>
+                            <li><NavLink to="/" exact activeClassName="active">Domov</NavLink></li>
+                            <li><NavLink to="/about" exact activeClassName="active">O nás</NavLink></li>
+                            <li><NavLink to="/portfolio" exact activeClassName="active">Portfólio</NavLink></li>
+                            <li><NavLink to="/contact" exact activeClassName="active">Kontakt</NavLink></li>
                         </ul>
                     </div>
 
                     <div className="language">
+                        <FontAwesomeIcon className="globe" icon={faGlobe} />
                         <p>Slovensky</p>
+                        <FontAwesomeIcon className="angleDown" icon={faAngleDown} />
                     </div>
 
                     <div className="rental">

@@ -20,18 +20,24 @@ function Carousel(){
             <Slider {...settings}>
                 <div className="slide-1">
                     <div className="text">
-                        <p>Lorem ipsum dolor simet.</p>
-                        <h1>Some text</h1>
+                        <p>Sme najlepší partner pre vašu stavbu.</p>
+                        <h1>Presnosť</h1>
                     </div>  
                 </div>
                 
                 <div className="slide-2">
                     <div className="text">
-                        <p>Lorem ipsum dolor simet.</p>
-                        <h1>Some other text</h1>
+                        <p>Sme najlepší partner pre vašu stavbu.</p>
+                        <h1>Precíznosť</h1>
                     </div>  
                 </div>
-                
+
+                <div className="slide-3">
+                    <div className="text">
+                        <p>Sme najlepší partner pre vašu stavbu.</p>
+                        <h1>Kvalita</h1>
+                    </div>  
+                </div>
             </Slider>
         </div>
     )

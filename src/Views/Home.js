@@ -12,15 +12,13 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 
 //Components
-import Navigation from '../Components/Navigation';
 import Carousel from '../Components/Carousel';
 import PortfolioSlider from '../Components/PortfolioSlider';
-import Footer from '../Components/Footer';
 
 //Certificate paths
-import ISO9001 from '../Img/iso9001.jpg';
-import ISO14001 from '../Img/iso14001.jpg';
-import ISO18001 from '../Img/iso18001.jpg';
+import ISO9001 from '../Img/Certificates/iso9001.jpg';
+import ISO14001 from '../Img/Certificates/iso14001.jpg';
+import ISO18001 from '../Img/Certificates/iso18001.jpg';
 
 //SVG icons
 import Dots from '../Icons/Dots';
@@ -30,7 +28,6 @@ import Circle from '../Icons/Circle';
 function Home(){
     return(
         <div className="home">
-            <Navigation />
             <Carousel />
 
             <div className="container">
@@ -61,8 +58,14 @@ function Home(){
                             <p>Certifikát kvality</p>
                             <img src={ISO9001} alt="ISO9001 Certificate" />
 
-                            <a href="#">Zistiť viac</a>
-                            <a href="#">Zobrazit certifikát -</a>
+                            <div className="box">
+                                <a href="#">Zistiť viac</a>
+
+                                <div className="showMore">
+                                    <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                </div>
+                            </div>
+   
                         </div>
 
                         <div className="card">
@@ -70,8 +73,13 @@ function Home(){
                             <p>Certifikát enviromentu</p>
                             <img src={ISO14001} alt="ISO14001 Certificate" />
 
-                            <a href="#">Zistiť viac</a>
-                            <a href="#">Zobrazit certifikát -</a>
+                            <div className="box">
+                                <a href="#">Zistiť viac</a>
+
+                                <div className="showMore">
+                                    <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="card">
@@ -79,8 +87,13 @@ function Home(){
                             <p>Certifikát bezpečnosti</p>
                             <img src={ISO18001} alt="ISO18001 Certificate" />
 
-                            <a href="#">Zistiť viac</a>
-                            <a href="#">Zobrazit certifikát -</a>
+                            <div className="box">
+                                <a href="#">Zistiť viac</a>
+
+                                <div className="showMore">
+                                    <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,9 +163,6 @@ function Home(){
 
                 <Square />
             </div>
-
-            <Footer />
-
         </div>
     )
 }

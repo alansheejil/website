@@ -43,5 +43,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "react-router-dom": "^5.2.0",
+    "react-transition-group": "^4.4.1"
+  }
 }
