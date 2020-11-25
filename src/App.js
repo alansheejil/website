@@ -16,6 +16,7 @@ import Footer from './Components/Footer';
 //Views
 import Home from './Views/Home';
 import About from './Views/About';
+import Contact from './Views/Contact';
 
 function App() {
   return (
@@ -49,6 +50,22 @@ function App() {
                       >
                         <div className="page">
                           <About />
+                        </div>
+
+                    </CSSTransition>
+                  )}
+            </Route>
+
+            <Route key="/contact" exact path="/contact">
+                  {({match})=>(
+                    <CSSTransition
+                      in={match != null}
+                      timeout={300}
+                      classNames="slide-forward"
+                      unmountOnExit
+                      >
+                        <div className="page">
+                          <Contact />
                         </div>
 
                     </CSSTransition>

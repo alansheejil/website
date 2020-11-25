@@ -38,12 +38,15 @@ function Home(){
 
                 <div className="aboutUs">
                     <h2>O nás <Dots /></h2>
-                    <h3>Company name</h3>
-                    <div className="text">
-                        <p>Naša spoločnosť bola založená v roku 2004. Od svojho vzniku sme realizovali desiatky stavebných projektov rôzneho charakteru. Cieľom všetkých našich činností je vždy plné uspokojenie požiadaviek a potrieb zákazníka.</p>
 
-                        <div className="showMore">
-                            <a href="#">Zobraziť viac <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                    <div className="container-inner">
+                        <h3>Company name</h3>
+                        <div className="text">
+                            <p>Naša spoločnosť bola založená v roku 2004. Od svojho vzniku sme realizovali desiatky stavebných projektov rôzneho charakteru. Cieľom všetkých našich činností je vždy plné uspokojenie požiadaviek a potrieb zákazníka.</p>
+
+                            <div className="showMore">
+                                <a href="#">Zobraziť viac <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                            </div>
                         </div>
                     </div>
 
@@ -52,46 +55,49 @@ function Home(){
 
                 <div className="certificates">
                     <h2>Certifikáty <Dots /></h2>
-                    <div className="card-container">
-                        <div className="card">
-                            <h3>ISO 9001</h3>
-                            <p>Certifikát kvality</p>
-                            <img src={ISO9001} alt="ISO9001 Certificate" />
 
-                            <div className="box">
-                                <a href="#">Zistiť viac</a>
+                    <div className="container-inner">
+                        <div className="card-container">
+                            <div className="card">
+                                <h3>ISO 9001</h3>
+                                <p>Certifikát kvality</p>
+                                <img src={ISO9001} alt="ISO9001 Certificate" />
 
-                                <div className="showMore">
-                                    <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                <div className="box">
+                                    <a href="#">Zistiť viac</a>
+
+                                    <div className="showMore">
+                                        <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                            <div className="card">
+                                <h3>ISO 14001</h3>
+                                <p>Certifikát enviromentu</p>
+                                <img src={ISO14001} alt="ISO14001 Certificate" />
+
+                                <div className="box">
+                                    <a href="#">Zistiť viac</a>
+
+                                    <div className="showMore">
+                                        <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                    </div>
                                 </div>
                             </div>
-   
-                        </div>
 
-                        <div className="card">
-                            <h3>ISO 14001</h3>
-                            <p>Certifikát enviromentu</p>
-                            <img src={ISO14001} alt="ISO14001 Certificate" />
+                            <div className="card">
+                                <h3>OHSAS 18001</h3>
+                                <p>Certifikát bezpečnosti</p>
+                                <img src={ISO18001} alt="ISO18001 Certificate" />
 
-                            <div className="box">
-                                <a href="#">Zistiť viac</a>
+                                <div className="box">
+                                    <a href="#">Zistiť viac</a>
 
-                                <div className="showMore">
-                                    <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="card">
-                            <h3>OHSAS 18001</h3>
-                            <p>Certifikát bezpečnosti</p>
-                            <img src={ISO18001} alt="ISO18001 Certificate" />
-
-                            <div className="box">
-                                <a href="#">Zistiť viac</a>
-
-                                <div className="showMore">
-                                    <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                    <div className="showMore">
+                                        <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -100,10 +106,13 @@ function Home(){
 
                 <div className="portfolio">
                     <h2>Portfólio <Dots /></h2>
-                    <h3>Naše najnovšie práce</h3>
 
-                    <Square />
-                    <PortfolioSlider />
+                    <div className="container-inner">
+                        <h3>Naše najnovšie práce</h3>
+
+                        <Square />
+                        <PortfolioSlider />
+                    </div>
                 </div>
             </div>
 
@@ -120,45 +129,49 @@ function Home(){
                 <div className="container">
                     <h2>Kontakt <Dots /></h2>
 
-                    <div className="wrapper">
-                        <div className="info">
-                            <div className="heading">
-                                <FontAwesomeIcon icon={faMapMarkerAlt} />
-                                <h4>Kde sme</h4>
+                    <div className="container-inner">
+                        <div className="wrapper">
+                            <div className="info">
+                                <div className="heading">
+                                    <FontAwesomeIcon icon={faMapMarkerAlt} />
+                                    <h4>Kde sme</h4>
+                                </div>
+                                <p>Kukučínova 533/28</p>
+                                <p>927 01</p>
+                                <p>Šaľa</p>
+                                
+                                <div className="heading">
+                                    <FontAwesomeIcon icon={faPhoneAlt} /> 
+                                    <h4>Kontakt</h4>
+                                </div>
+                                <p>0900 000 000</p>
+                                <p>email@company.com</p>
+
+                                <div className="heading">
+                                    <FontAwesomeIcon icon={faClock} />
+                                    <h4>Pracovná doba</h4>
+                                </div>
+                                <p>Pondelok - piatok</p>
+                                <p>8:00 - 18:00</p>
                             </div>
-                            <p>Kukučínova 533/28</p>
-                            <p>927 01</p>
-                            <p>Šaľa</p>
-                            
-                            <div className="heading">
-                                <FontAwesomeIcon icon={faPhoneAlt} /> 
-                                <h4>Kontakt</h4>
+
+                            <div className="form">
+                                <form>
+                                    <input type="text" placeholder="Name" />
+                                    <input type="email" placeholder="Email" />
+
+                                    <textarea placeholder="Message"></textarea>
+
+                                    <div className="send">
+                                        <FontAwesomeIcon icon={faPaperPlane} />
+                                        <a href="#">Odoslať</a>
+                                    </div> 
+                                </form>
                             </div>
-                            <p>0900 000 000</p>
-                            <p>email@company.com</p>
-
-                            <div className="heading">
-                                <FontAwesomeIcon icon={faClock} />
-                                <h4>Pracovná doba</h4>
-                            </div>
-                            <p>Pondelok - piatok</p>
-                            <p>8:00 - 18:00</p>
-                        </div>
-
-                        <div className="form">
-                            <form>
-                                <input type="text" placeholder="Name" />
-                                <input type="email" placeholder="Email" />
-
-                                <textarea placeholder="Message"></textarea>
-
-                                <div className="send">
-                                    <FontAwesomeIcon icon={faPaperPlane} />
-                                    <a href="#">Odoslať</a>
-                                </div> 
-                            </form>
                         </div>
                     </div>
+
+
                 </div>
 
                 <Square />

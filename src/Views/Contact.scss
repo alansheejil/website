@@ -1,0 +1,179 @@
+$mainColor : #05a0e3;
+
+/*Icons*/
+h2{
+    position: relative;
+    z-index: 2;
+
+    #dots{
+        z-index: -1;
+    }
+}
+
+.contact{
+    background: url('../Img/Background/contact-background.png') no-repeat;
+    background-position-y:100%;
+    background-position-x:100%;
+    background-size: 40%;
+
+    padding-bottom: 4em;
+    position: relative;
+
+    #dots{
+        position: absolute;
+        fill: $mainColor;
+        opacity: 50%;
+        top: -5px;
+        left: -10px;
+        width: 40px;
+    }
+
+    #square{
+        top:-2%;
+        right: 8%;
+        width: 350px;
+        transform: rotate(70deg);
+        fill:none;
+        stroke:$mainColor;
+        stroke-width: .2;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .container-inner{
+        width: 90%;
+        margin: 0 auto;
+
+        .wrapper{
+            display: flex;
+            justify-content:space-between;
+            margin-bottom: 3em;
+            width: 100%;
+    
+            .info{
+                width: 35%;
+                min-width:200px;
+                max-width: 330px;
+                background-color: $mainColor;
+                color:white;
+                padding: 2.5em;
+                border-radius: .5em;
+                
+                .heading{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+    
+                    &:nth-of-type(2),&:nth-of-type(3){
+                        margin-top: 2em;
+                    }
+    
+                    h4{
+                        font-size: 1.5em;
+                        font-weight: 500;
+                        margin: 0 0 0 0.5em;
+                    }
+                }
+        
+                p{
+                    margin: 0.5em 0;
+                    font-size: 1em;
+                    font-weight: 300;
+                }
+            }
+    
+            .form{
+                width: 40%;
+                min-width: 300px;
+                max-width: 500px;
+                display: flex;
+                flex-direction: column;
+    
+                input,textarea{
+                    margin: 1em 0;
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: .7em;
+                    border:0.09em solid #ccc;
+                    border-radius: .3em;
+                    outline: none;
+                    font-size: 1.2em;
+                    font-family: inherit;
+                    -webkit-box-shadow: 0px 2px 7px -5px #000000; 
+                    box-shadow: 0px 2px 7px -5px #000000;
+    
+                    &:first-of-type{
+                        margin-top: 0;
+                    }
+                }
+    
+                .send{
+                    background-color: $mainColor;
+                    color: white;
+                    width: auto;
+                    padding: .7em 2em;
+                    display: inline-block;
+                    margin-bottom: 0;
+                    margin-top: 2.4em;
+                    -webkit-box-shadow: 0px 2px 7px -5px #000000; 
+                    box-shadow: 0px 2px 7px -5px #000000;
+                    border-radius: .3em;
+                    font-size: 1.2em;
+    
+                    a{
+                        color:white;
+                        text-decoration: none;
+                        margin-left: 0.5em;
+                        padding-right: 0.5em;
+                        position: relative;
+    
+                        &::after{
+                            content: '';
+                            width: 20px;
+                            height: 2px;
+                            background-color: black;
+                            position: absolute;
+                            top:47%;
+                            right: -60%;
+                        }
+                    }
+                    
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+    
+                textarea{
+                    height: 10em;
+                }
+            }
+        }
+    
+        .rental{
+            width:100%;
+            margin: 0 auto;
+            margin-top: 15%;
+
+            h3{
+                font-size: 2em;
+                margin-bottom: 1em;
+            }
+
+            h1{
+                font-size: 5em;
+                margin:0;
+                color:$mainColor;
+                margin-left: 40px;
+            }
+
+            p{
+                margin-left: 40px;
+                font-size: 1.2em;
+                font-weight: 400;
+            }
+        }
+    }
+
+
+}

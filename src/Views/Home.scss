@@ -10,6 +10,11 @@ h2{
     }
 }
 
+.container-inner{
+    width: 90%;
+    margin: 0 auto;
+}
+
 //View background
 .home{
     background-image:
@@ -94,7 +99,6 @@ h2{
 
         h3{
             font-size: 1.5em;
-            transform:translateX(2%);
         }
 
         h2{
@@ -104,7 +108,7 @@ h2{
         }
 
         .text{
-            transform:translateX(10%);
+            margin-left: 40px;
             max-width: 500px;
             p{
                 line-height: 1.5em;
@@ -147,11 +151,11 @@ h2{
 
         .card-container{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-direction: row;
 
             .card{
-                width: 23%;
+                width: 26%;
                 padding: 1.5em;
                 background-color:white;
                 border-radius: .5em;
@@ -250,7 +254,6 @@ h2{
 
         h3{
             font-size: 2em;
-            transform:translateX(7%);
             max-width: 500px;
             margin: 2em 0;
         }
@@ -299,6 +302,8 @@ h2{
     /*Contact*/
     .contact{
         position: relative;
+        background: none;
+        padding-bottom: 0;
 
         h2{
             font-size: 3.5em;
@@ -307,13 +312,13 @@ h2{
 
         .wrapper{
             display: flex;
-            justify-content:space-evenly;
+            justify-content:space-between;
             margin-bottom: 3em;
 
             .info{
-                width: 30%;
+                width: 35%;
                 min-width:200px;
-                max-width: 300px;
+                max-width: 330px;
                 background-color: $mainColor;
                 color:white;
                 padding: 2.5em;
@@ -345,7 +350,7 @@ h2{
             .form{
                 width: 40%;
                 min-width: 300px;
-                max-width: 450px;
+                max-width: 500px;
                 display: flex;
                 flex-direction: column;
 
