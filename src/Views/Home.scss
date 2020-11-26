@@ -245,6 +245,7 @@ h2{
 
     /*Portfolio*/
     .portfolio{
+        background: none;
         padding: 3em 0;
         position: relative;
 
@@ -268,7 +269,7 @@ h2{
 
     /*All works*/
     .allWorks{
-        background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url('../Img/construction_site.jpg') center center;
+        background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url('../Img/home-portfolio-stripe-bg.jpg') center center;
         background-size: cover;
         padding: 3em;
         text-align: center;

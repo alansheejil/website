@@ -3,6 +3,8 @@ $mainColor : #05a0e3;
 nav{
     overflow-x: hidden;
     padding: 1em 0;
+    font-size: 1.05em;
+
     .nav-items{
         display: flex;
         justify-content: space-around;
@@ -60,6 +62,7 @@ nav{
             color: $mainColor;
             text-decoration: none;
             position: relative;
+            background-color: white;
 
             &:hover{
                 background-color: $mainColor;

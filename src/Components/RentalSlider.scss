@@ -1,0 +1,38 @@
+$mainColor : #05a0e3;
+
+.rentalSlider{
+  
+
+    .slide{
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .next,.prev{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        fill: $mainColor;
+        background-color:white;
+        border-radius: 50%;
+    }
+    
+    .next{
+        right: -5%;
+    }
+    
+    .prev{
+        left: -5%;
+    }
+
+    .slide{
+        background-color: #ccc;
+    }
+}
+
+

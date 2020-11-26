@@ -1,0 +1,94 @@
+$mainColor : #05a0e3;
+
+/*Icons*/
+h2{
+    position: relative;
+    z-index: 2;
+
+    #dots{
+        z-index: -1;
+    }
+}
+
+.container-inner{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.portfolio{
+    background: 
+        url('../Img/Background/construction-background.png') no-repeat,
+        url('../Img/Background/wave5.svg') no-repeat;
+
+    background-position:
+        top 1% left 95%,
+        top 60% left 0%;
+
+    background-size:
+         55%,
+         100%;
+
+    padding-top: 1em;
+    position: relative;
+
+    #dots{
+        position: absolute;
+        fill: $mainColor;
+        opacity: 50%;
+        top: -5px;
+        left: -10px;
+        width: 40px;
+    }
+
+    #square{
+        fill: none;
+        stroke: #05a0e3;
+        position: absolute;
+        top:11%;
+        right: 9%;
+        width: 400px;
+        stroke-width: 0.15;
+        transform: rotate(40deg);
+        z-index: -1;
+    }
+    
+    .text{
+        max-width: 500px;
+        line-height: 1.5em;
+    }
+
+    .portfolio-container{
+        margin-top: 20%;
+
+        .portfolio-item{
+            margin-bottom: 3em;
+
+            h3{
+                font-size: 2.5em;
+                margin-left: 5px;
+                position: relative;
+                z-index: 2;
+
+                #square{
+                    fill: none;
+                    stroke: #05a0e3;
+                    position: absolute;
+                    stroke-width: 1;
+                    top: -45%;
+                    left: -3.3%;
+                    width: 70px;
+                    transform: rotate(20deg);
+                    z-index: -1;
+                }
+            }
+
+            p{
+                line-height: 1.5em;
+                max-width: 70%;
+                margin-left: 20px;
+                font-size: 1.1em;
+                margin-bottom: 2.5em;
+            }
+        }
+    }
+}

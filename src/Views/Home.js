@@ -24,6 +24,7 @@ import ISO18001 from '../Img/Certificates/iso18001.jpg';
 import Dots from '../Icons/Dots';
 import Square from '../Icons/Square';
 import Circle from '../Icons/Circle';
+import { NavLink } from 'react-router-dom';
 
 function Home(){
     return(
@@ -33,7 +34,7 @@ function Home(){
             <div className="container">
                 <div className="rentalOffer">
                     <p>Prenájom špičkovej techniky za super ceny</p>
-                    <a href="#">Prenajať</a>
+                    <NavLink to="/rental">Prenajať</NavLink>
                 </div>
 
                 <div className="aboutUs">
@@ -45,7 +46,7 @@ function Home(){
                             <p>Naša spoločnosť bola založená v roku 2004. Od svojho vzniku sme realizovali desiatky stavebných projektov rôzneho charakteru. Cieľom všetkých našich činností je vždy plné uspokojenie požiadaviek a potrieb zákazníka.</p>
 
                             <div className="showMore">
-                                <a href="#">Zobraziť viac <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                <NavLink to="/about">Zobraziť viac <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></NavLink>
                             </div>
                         </div>
                     </div>
@@ -121,7 +122,7 @@ function Home(){
 
                 <div className="container">
                     <h3>Chcete vidieť všetky naše práce? </h3> 
-                    <a href="#">Zobraziť celé portfólio</a>  
+                    <NavLink to="/portfolio">Zobraziť celé portfólio</NavLink>
                 </div>        
             </div>
 

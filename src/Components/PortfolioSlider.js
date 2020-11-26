@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 //Slider image
-import SliderImage from '../Img/excavator.jpg';
+import SliderImage from '../Img/Slider-Home/excavator.jpg';
 
 //Arrows
 import Next from '../Icons/Next';

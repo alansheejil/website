@@ -1,0 +1,45 @@
+$mainColor : #05a0e3;
+
+.portfolioItemSlider{
+    .slider{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .next,.prev{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        fill: $mainColor;
+        background-color:white;
+        border-radius: 50%;
+    }
+    
+    .next{
+        right: -1%;
+    }
+    
+    .prev{
+        left: -1%;
+    }
+
+}
+
+.slide{
+    .image{
+        margin: 0 -10px;
+        padding:0 15px;
+
+
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: .5em;
+        }
+    }
+}
+
+

@@ -1,0 +1,293 @@
+$mainColor : #05a0e3;
+
+/*Icons*/
+h2{
+    position: relative;
+    z-index: 2;
+
+    #dots{
+        z-index: -1;
+    }
+}
+
+.container-inner{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rental{
+    background: 
+        url('../Img/Background/lifter-background.png') no-repeat,
+        url('../Img/Background/wave6.svg') no-repeat,
+        url('../Img/Background/wave7.svg') no-repeat,
+        url('../Img/Background/excavator-background.png') no-repeat;
+
+    background-position:
+        top 0 left -50%,
+        top 0 right 0,
+        top 50% left 0,
+        bottom 0 right 0;
+
+    background-size:
+        50%,
+        50%,
+        100%,
+        40%;
+
+    #dots{
+        position: absolute;
+        fill: $mainColor;
+        opacity: 50%;
+        top: -5px;
+        left: -10px;
+        width: 40px;
+    }
+    
+    #square,#circle{
+        fill:none;
+        stroke:$mainColor;
+        stroke-width: .6;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .intro{
+        padding-top: 5em;
+        position: relative;
+
+        #circle{
+            width: 110px;
+            right:10%;
+            top: 25%;
+            z-index: 2;
+        }
+
+        p{
+            font-size: 1.2em;
+            margin-bottom: 0;
+        }
+
+        h1{
+            color:$mainColor;
+            font-size: 5em;
+            margin-top: 0;
+        }
+
+
+        a{
+            color:white;
+            background-color: $mainColor;
+            text-decoration: none;
+            margin-top: 5em;
+            display: inline-block;
+            padding:1em 3.5em;
+            border-radius: 0.5em;
+            position: relative;
+            font-weight: 400;
+            font-size: 1.1em;
+
+            &::after{
+                content: '';
+                width: 20px;
+                height: 2px;
+                background-color: black;
+                position: absolute;
+                top:47%;
+                right: -5%;
+            }
+        }
+
+        .image{
+            width: 400px;
+            height: auto;
+            border-radius: .5em;
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: rotate(10deg);
+            
+            
+            img{
+                width: 100%;
+                height:auto;
+                border-radius: .5em;
+            }
+
+            #square{
+                stroke-width: .2;
+                transform: rotate(20deg);
+                width: 400px;
+                margin-left: -120%;
+                margin-top: 24%;
+            }
+        }
+    }
+
+    .ourMachinery{
+        margin-top: 20%;
+        p{
+            font-weight: 400;
+            font-size: 1.1em;
+            line-height: 1.5em;
+            max-width: 600px;
+        }
+
+        .machine-container{
+            .machine{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin:5em 0;
+
+                .slider{
+                    width: 32%;
+                    height: auto;
+                }
+
+                .description{
+                    h3{
+                        font-size: 2.5vw;
+                        margin:0;
+                        position: relative;
+                        z-index: 2;
+        
+                        #square{
+                            fill: none;
+                            stroke: #05a0e3;
+                            position: absolute;
+                            stroke-width: 1;
+                            top: -45%;
+                            left: -5%;
+                            width: 70px;
+                            transform: rotate(20deg);
+                            z-index: -1;
+                        }
+                    }
+
+                    p{
+                        font-size: 1.05vw;
+                        margin:0;
+                    }
+
+                    .list{
+                        margin-top: 2em;
+
+                        .list-item{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            margin: .5em 0;
+                            
+
+                            .dot{
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                background-color: $mainColor;
+                                margin-right: .5em;
+                            }
+                        } 
+
+                        .desc{
+                            margin-left: 1em;
+                        }
+
+                    }
+
+                    .showMore{
+                        margin-top: 2em;
+                        border-bottom: 1px solid white;
+                        display:inline-block;
+
+                        &:hover{
+                            cursor: pointer;
+                            border-bottom: 1px solid black;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .price-list{
+        h3{
+            position: relative;
+            font-size: 3.2em;
+
+            #square{
+                fill: none;
+                stroke: #05a0e3;
+                position: absolute;
+                stroke-width: 1;
+                top: -32%;
+                left: -3%;
+                width: 70px;
+                transform: rotate(20deg);
+                z-index: -1;
+            }
+        }
+
+        .price{
+            color:white;
+            background-color: $mainColor;
+            text-decoration: none;
+            display: inline-block;
+            padding:1em 3.5em;
+            border-radius: 0.5em;
+            position: relative;
+            font-weight: 400;
+            font-size: 1.1em;
+
+            &::after{
+                content: '';
+                width: 20px;
+                height: 2px;
+                background-color: black;
+                position: absolute;
+                top:47%;
+                right: -5%;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .reservation{
+        width:100%;
+        margin: 0 auto;
+        margin-top: 15%;
+
+        h3{
+            position: relative;
+            font-size: 3.2em;
+
+            #square{
+                fill: none;
+                stroke: #05a0e3;
+                position: absolute;
+                stroke-width: 1;
+                top: -32%;
+                left: -3%;
+                width: 70px;
+                transform: rotate(20deg);
+                z-index: -1;
+            }
+        }
+
+        h1{
+            font-size: 5em;
+            margin:0;
+            color:$mainColor;
+            margin-left: 40px;
+        }
+
+        p{
+            margin-left: 40px;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+}

@@ -17,6 +17,8 @@ import Footer from './Components/Footer';
 import Home from './Views/Home';
 import About from './Views/About';
 import Contact from './Views/Contact';
+import Portfolio from './Views/Portfolio';
+import Rental from './Views/Rental';
 
 function App() {
   return (
@@ -71,6 +73,39 @@ function App() {
                     </CSSTransition>
                   )}
             </Route>
+
+            <Route key="/portfolio" exact path="/portfolio">
+                  {({match})=>(
+                    <CSSTransition
+                      in={match != null}
+                      timeout={300}
+                      classNames="slide-forward"
+                      unmountOnExit
+                      >
+                        <div className="page">
+                          <Portfolio />
+                        </div>
+
+                    </CSSTransition>
+                  )}
+            </Route>
+
+            <Route key="/rental" exact path="/rental">
+                  {({match})=>(
+                    <CSSTransition
+                      in={match != null}
+                      timeout={300}
+                      classNames="slide-forward"
+                      unmountOnExit
+                      >
+                        <div className="page">
+                          <Rental />
+                        </div>
+
+                    </CSSTransition>
+                  )}
+            </Route>
+
             <Footer />
           </div>
         </div>

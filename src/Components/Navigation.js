@@ -36,7 +36,7 @@ function Navigation(){
                     </div>
 
                     <div className="rental">
-                        <a href="#">Prenájom stavebnej techniky</a>
+                        <NavLink to="/rental">Prenájom stavebnej techniky</NavLink>
                     </div>
                 </div>
             </div>
