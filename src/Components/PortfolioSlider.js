@@ -16,18 +16,45 @@ import Prev from '../Icons/Prev';
 import './PortfolioSlider.scss'
 
 function PortfolioSlider(){
-    const ArrowLeft = (props) => (
-        <a {...props} className={'prev'}><Prev /></a>
-    );
-    const ArrowRight = (props) => (
-        <a {...props} className={'next'}><Next /></a>
-    );
+
+    //Custom arrows
+    const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+        <button
+          {...props}
+          className={
+            "slick-prev slick-arrow" +
+            (currentSlide === 0 ? " slick-disabled" : "")
+          }
+          aria-hidden="true"
+          aria-disabled={currentSlide === 0 ? true : false}
+          type="button"
+          id="prevSlide"
+        >
+          <Prev />
+        </button>
+      );
+
+      const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+        <button
+          {...props}
+          className={
+            "slick-next slick-arrow" +
+            (currentSlide === slideCount - 1 ? " slick-disabled" : "")
+          }
+          aria-hidden="true"
+          aria-disabled={currentSlide === slideCount - 1 ? true : false}
+          type="button"
+          id="nextSlide"
+        >
+          <Next />
+        </button>
+      );
 
     const settings ={
         dots:false,
         arrows:true,
-        prevArrow:<ArrowLeft />,
-        nextArrow:<ArrowRight />,
+        prevArrow:<SlickArrowLeft />,
+        nextArrow:<SlickArrowRight />,
         autoplay:false,
         slidesToShow:3,
         slidesToScroll:3,
@@ -47,78 +74,78 @@ function PortfolioSlider(){
         <div className="portfolioSlider">
             <Slider {...settings}>
                 <div className="slide">
-                    <img src={SliderImage} alt="slider-image" />
+                    <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
                         <h4>Some construction</h4>
 
                         <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
 
-                        <a href="#">Zobraziť viac</a>
+                        <a href="#sa">Zobraziť viac</a>
                     </div>  
                 </div>
 
                 <div className="slide">
-                    <img src={SliderImage} alt="slider-image" />
+                    <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
                         <h4>Some construction</h4>
 
                         <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
 
-                        <a href="#">Zobraziť viac</a>
-                    </div>  
-                </div>
-
-                
-                <div className="slide">
-                    <img src={SliderImage} alt="slider-image" />
-                    <div className="text">
-                        <p>Výstavba</p>
-                        <h4>Some construction</h4>
-
-                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
-
-                        <a href="#">Zobraziť viac</a>
+                        <a href="#sa">Zobraziť viac</a>
                     </div>  
                 </div>
 
                 
                 <div className="slide">
-                    <img src={SliderImage} alt="slider-image" />
+                    <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
                         <h4>Some construction</h4>
 
                         <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
 
-                        <a href="#">Zobraziť viac</a>
+                        <a href="#sa">Zobraziť viac</a>
                     </div>  
                 </div>
 
                 
                 <div className="slide">
-                    <img src={SliderImage} alt="slider-image" />
+                    <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
                         <h4>Some construction</h4>
 
                         <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
 
-                        <a href="#">Zobraziť viac</a>
+                        <a href="#sa">Zobraziť viac</a>
                     </div>  
                 </div>
 
                 
                 <div className="slide">
-                    <img src={SliderImage} alt="slider-image" />
+                    <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
                         <h4>Some construction</h4>
 
                         <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
 
-                        <a href="#">Zobraziť viac</a>
+                        <a href="#sa">Zobraziť viac</a>
+                    </div>  
+                </div>
+
+                
+                <div className="slide">
+                    <img src={SliderImage} alt="portfolio-example" />
+                    <div className="text">
+                        <p>Výstavba</p>
+                        <h4>Some construction</h4>
+
+                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
+
+                        <a href="#sa">Zobraziť viac</a>
                     </div>  
                 </div> 
                 

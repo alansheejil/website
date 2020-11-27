@@ -2,8 +2,7 @@ import React from 'react';
 
 function Prev(){
     return(
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-             viewBox="0 0 512 512" >
+        <svg version="1.1" viewBox="0 0 512 512" >
         <g>
             <g>
                 <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M313.749,347.584

@@ -6,25 +6,32 @@ $mainColor : #05a0e3;
         overflow-x: hidden;
     }
 
-    .next,.prev{
+    #nextSlide,#prevSlide{
         width: 40px;
         height: 40px;
         position: absolute;
         top: 50%;
         z-index: 1;
         fill: $mainColor;
-        background-color:white;
+        background-color: white;
         border-radius: 50%;
     }
     
-    .next{
+    #nextSlide{
         right: -1%;
     }
     
-    .prev{
+    #prevSlide{
         left: -1%;
     }
-
+    
+    .slick-next::before{
+        content: '';
+    }
+    
+    .slick-prev::before{
+        content: '';
+    }
 }
 
 .slide{
@@ -41,5 +48,6 @@ $mainColor : #05a0e3;
         }
     }
 }
+
 
 

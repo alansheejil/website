@@ -16,18 +16,44 @@ import Prev from '../Icons/Prev';
 import './PortfolioItemSlider.scss'
 
 function PortfolioItemSlider(){
-    const ArrowLeft = (props) => (
-        <a {...props} className={'prev'}><Prev /></a>
-    );
-    const ArrowRight = (props) => (
-        <a {...props} className={'next'}><Next /></a>
-    );
+    //Custom arrows
+    const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+        <button
+          {...props}
+          className={
+            "slick-prev slick-arrow" +
+            (currentSlide === 0 ? " slick-disabled" : "")
+          }
+          aria-hidden="true"
+          aria-disabled={currentSlide === 0 ? true : false}
+          type="button"
+          id="prevSlide"
+        >
+          <Prev />
+        </button>
+      );
+
+      const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+        <button
+          {...props}
+          className={
+            "slick-next slick-arrow" +
+            (currentSlide === slideCount - 1 ? " slick-disabled" : "")
+          }
+          aria-hidden="true"
+          aria-disabled={currentSlide === slideCount - 1 ? true : false}
+          type="button"
+          id="nextSlide"
+        >
+          <Next />
+        </button>
+      );
 
     const settings ={
         dots:false,
         arrows:true,
-        prevArrow:<ArrowLeft />,
-        nextArrow:<ArrowRight />,
+        prevArrow:<SlickArrowLeft />,
+        nextArrow:<SlickArrowRight />,
         autoplay:false,
         slidesToShow:3,
         slidesToScroll:1,
@@ -39,42 +65,42 @@ function PortfolioItemSlider(){
             <Slider {...settings}>
                 <div className="slide">
                     <div className="image">
-                        <img src={SliderImage} alt="slider-image" /> 
+                        <img src={SliderImage} alt="portfolio-example" /> 
                     </div>
                     
                 </div>
 
                 <div className="slide">
                     <div className="image">
-                        <img src={SliderImage} alt="slider-image" /> 
+                        <img src={SliderImage} alt="portfolio-example" /> 
                     </div>
                 </div>
 
                 
                 <div className="slide">
                     <div className="image">
-                        <img src={SliderImage} alt="slider-image" /> 
+                        <img src={SliderImage} alt="portfolio-example" /> 
                     </div>
                 </div>
 
                 
                 <div className="slide">
                     <div className="image">
-                        <img src={SliderImage} alt="slider-image" /> 
+                        <img src={SliderImage} alt="portfolio-example" /> 
                     </div>
                 </div>
 
                 
                 <div className="slide">
                     <div className="image">
-                        <img src={SliderImage} alt="slider-image" /> 
+                        <img src={SliderImage} alt="portfolio-example" /> 
                     </div>
                 </div>
 
                 
                 <div className="slide">
                     <div className="image">
-                        <img src={SliderImage} alt="slider-image" /> 
+                        <img src={SliderImage} alt="portfolio-example" /> 
                     </div>
                 </div> 
                 
