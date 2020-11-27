@@ -423,5 +423,265 @@ h2{
             transform: rotate(40deg);
         }
     }
+        /*Media queries - TABLET*/
+        @media screen and (min-width:500px) and (max-width:1100px){
+            /*Rental offer section*/
+            .rentalOffer{
+                width: 100%;
+                box-sizing: border-box;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            /*About us section*/
+            .aboutUs{
+                padding: 0;
+            
+                h2{
+                    font-size: 3.25em;
+                    margin-bottom: 0;
+                }
+            
+                .text{
+                    margin-left: 0;
+                }
+            
+                #square{
+                    top: 90%;
+                    right: 0;
+                    width:120px;
+                }
+            }
+
+            /*Certificates section*/
+            .certificates{
+                padding-bottom: 0;
+                h2{
+                    font-size: 3em;
+                    margin-bottom:1em;
+                }
+
+                .card-container{
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+
+                    .card{
+                        width:46%;
+                        min-width: 215px;
+                        box-sizing: border-box;
+                        margin-bottom: 2em;
+
+                        .box{
+                            > a{
+                                padding: 0.5em 2em;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*Portfolio section*/
+            .portfolio{
+                padding-top: 0;
+            }
+
+            /*Contact section*/
+            .contact{
+                padding-bottom: 5em;
+
+                #square{
+                    top: -10%;
+                    right: 0;
+                    width: 130px;
+                }
+
+                h2{
+                    font-size: 3em;
+                    margin-bottom: 1em;
+                }
+                .wrapper{
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .info{
+                        width: 100% !important;
+                        max-width: 100% !important;
+                        box-sizing: border-box;
+                        padding: 1.5em !important;
+                    }
+
+                    .form{
+                        margin-top: 2em;
+                        width: 100% !important;
+                        min-width: 100% !important;
+
+                        .send{
+                            display: block !important;
+                            text-align: center;
+                            position: relative;
+                            width: 100% !important;
+                            box-sizing: border-box;
+                            a::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:600px){
+            /*Certificates section*/
+            .certificates{
+                h2{
+                    font-size: 3em;
+                    margin-bottom:0.5em;
+                }
+
+                .card-container{
+                    flex-direction: column;
+
+                    .card{
+                        width: 100% !important;
+                        box-sizing: border-box;
+                        margin: 1em 0;
+                    }
+                }
+            }
+        }
+
+        /*Media queries - MOBILE*/
+        @media screen and (max-width:500px){
+            #dots{
+                left: -3.5%;
+                top: -10.5%;
+                width: 35px;
+            }
+
+            /*Rental offer section*/
+            .rentalOffer{
+                display: none;
+            }
+
+            /*About us section*/
+            .aboutUs{
+                padding: 0;
+
+                h2{
+                    font-size: 3em;
+                    margin-bottom: 0;
+                }
+
+                .text{
+                    margin-left: 0;
+                }
+
+                #square{
+                    top: 90%;
+                    right: 0;
+                    width:120px;
+                }
+            }
+
+            /*Certificates section*/
+            .certificates{
+                h2{
+                    font-size: 3em;
+                    margin-bottom:0.5em;
+                }
+
+                .card-container{
+                    flex-direction: column;
+
+                    .card{
+                        width: 100% !important;
+                        box-sizing: border-box;
+                        margin: 1em 0;
+                    }
+                }
+            }
+
+            /*Portfolio section*/
+            .portfolio{
+                padding-top: 0;
+
+                #square{
+                    top: -10%;
+                    right: -30%;
+                }
+
+                h2{
+                    font-size: 3em;
+                    margin-bottom: 0em !important;
+                }
+
+                h3{
+                    font-size: 1.5em;
+                    margin-top: 1em;
+                    margin-bottom: 1.5em;
+                }
+            }
+
+            /*All works section*/
+            .allWorks{
+                padding: 3em 0;
+                h3{
+                    font-size: 1.8em;
+                    margin-top: -.7em;
+                }
+               
+                a{
+                    margin-bottom: 1em;
+                }
+            }
+
+            /*Contact section*/
+            .contact{
+                padding-bottom: 5em;
+
+                #square{
+                    top: -10%;
+                    right: 0;
+                    width: 130px;
+                }
+
+                h2{
+                    font-size: 3em;
+                    margin-bottom: 1em;
+                }
+                .wrapper{
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .info{
+                        width: 100% !important;
+                        max-width: 100% !important;
+                        box-sizing: border-box;
+                        padding: 1.5em !important;
+                    }
+
+                    .form{
+                        margin-top: 2em;
+                        width: 100% !important;
+                        min-width: 100% !important;
+
+                        .send{
+                            display: block !important;
+                            text-align: center;
+                            position: relative;
+                            width: 100% !important;
+                            box-sizing: border-box;
+                            a::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            
+        }
 }
 

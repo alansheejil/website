@@ -61,10 +61,18 @@ function PortfolioSlider(){
         variableWidth:true,
         responsive: [
             {
-              breakpoint: 1030,
+              breakpoint: 1350,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint:800,
+              settings: {
+                slidesToShow:1,
+                slidesToScroll:1,
+                variableWidth:false
               }
             }
           ]

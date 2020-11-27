@@ -73,4 +73,35 @@ $mainColor : #05a0e3;
             }
         }
     }
+
+    /*Media queries - TABLET*/
+    @media screen and(max-width:1100px){
+        .copyright{
+            justify-content: center;
+            margin: 0;
+        }
+
+        .back-to-top{
+            display: none !important;
+        }
+    }
+
+    /*Media queries - MOBILE*/
+    @media screen and(max-width:800px){
+        .column-wrapper{
+            display: block;
+    
+            .column{
+                h4{
+                    margin-bottom: 0;
+                }
+
+                p{
+                    font-size: 1.05em !important;
+                    margin: 0.5em 0;
+                }
+            }
+        }
+    }
+
 }

@@ -31,7 +31,7 @@ function Rental(){
                     <NavLink to="/contact">Kontakt</NavLink>
                     
                     <div className="image">
-                        <img src={introImage} />
+                        <img src={introImage} alt="rental-intro" />
                         <Square />
                     </div>
                 </div>

@@ -10,6 +10,10 @@ nav{
         justify-content: space-around;
         align-items: center;
 
+        .mobile-menu-icon{
+            display:none;
+        }
+
         .language{
             display: flex;
             flex-direction: row;
@@ -80,4 +84,22 @@ nav{
             }
         }
     }
+
+    /*Media queries*/
+    @media screen and (max-width:1100px){
+        .nav-items{
+            justify-content: space-between;
+
+            .menu,.language,.rental{
+                display: none;
+            }
+
+            .mobile-menu-icon{
+                display: block;
+                color:$mainColor;
+                font-size: 2em;
+            }
+        }
+    }
+
 }

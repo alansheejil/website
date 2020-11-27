@@ -10,6 +10,7 @@ import './Navigation.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Navigation(){
     return(
@@ -37,6 +38,10 @@ function Navigation(){
 
                     <div className="rental">
                         <NavLink to="/rental">Prenájom stavebnej techniky</NavLink>
+                    </div>
+                    
+                    <div className="mobile-menu-icon">
+                        <FontAwesomeIcon icon={faBars} />
                     </div>
                 </div>
             </div>

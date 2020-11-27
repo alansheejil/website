@@ -39,24 +39,6 @@ $mainColor : #05a0e3;
     .slide-3{
         background:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url('../Img/Carousel-Main/carousel-slide-3.jpg') center center;
     }
-
-    .next{
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 50%;
-        right: 3%;
-        z-index: 1;
-    }
-    
-    .prev{
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 50%;
-        left: 3%;
-        z-index: 1;
-    }
     
     .slick-dots{
         bottom: 15%;
@@ -79,6 +61,29 @@ $mainColor : #05a0e3;
                 opacity: 1 !important;
             }
         }
+    }
+
+    /*Media queries - MOBILE*/
+    @media screen and (max-width:500px){
+        .slide-1,.slide-2,.slide-3{
+            height: 400px !important;
+            background-size: cover;
+
+            .text{
+                top: 20%;
+                left: 5%;
+
+                h1{
+                    font-size: 4em !important;
+                }
+            }
+
+        }
+
+        .slick-dots{
+            bottom: 5%;
+        }
+
     }
 }
 

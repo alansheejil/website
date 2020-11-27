@@ -107,4 +107,34 @@ $mainColor : #05a0e3;
     outline: none;
 }
 
+/*Media queries*/
+@media screen and (max-width:800px){
+    .portfolioSlider{
+        .slick-list{
+            padding:0 !important;
+    
+            .slick-slide{
+                margin: 0!important;
+                box-shadow: none !important;
+    
+                .text{
+                    border: 1px solid #ccc;
+                }
+            }
+            
+            .slick-track{
+                padding-bottom: 0 !important;
+            }
+        } 
+
+        #prevSlide{
+            left: -7% !important;
+        }
+
+        #nextSlide{
+            right: -7% !important;
+        }
+    }
+}
+
 
