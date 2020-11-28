@@ -176,5 +176,128 @@ h2{
         }
     }
 
+    /*Media queries*/
+    @media screen and (min-width:500px) and (max-width:1100px){
+        padding-bottom: 5em;
+
+        #square{
+            top: -10%;
+            right: 0;
+            width: 130px;
+        }
+
+        h2{
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
+        .wrapper{
+            flex-direction: column;
+            justify-content: center;
+
+            .info{
+                 width: 100% !important;
+                 max-width: 100% !important;
+                box-sizing: border-box;
+                padding: 1.5em !important;
+            }
+
+            .form{
+                margin-top: 2em;
+                width: 100% !important;
+                min-width: 100% !important;
+
+                .send{
+                    display: block !important;
+                    text-align: center;
+                    position: relative;
+                    width: 100% !important;
+                    box-sizing: border-box;
+                    a::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .rental{
+            h1{
+                font-size: 4em !important;
+                margin-left: 0 !important;
+            }
+
+            p{
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    @media screen and  (max-width:750px){
+        .rental{
+            h1{
+                font-size: 2.5em !important;
+                margin-left: 0 !important;
+            }
+
+            p{
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    @media screen and  (max-width:510px){
+        .rental{
+            h1{
+                font-size: 2em !important;
+                margin-left: 0 !important;
+            }
+
+            p{
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    @media screen and (max-width:500px){
+        padding-bottom: 5em;
+
+        #square{
+            top: -10%;
+            right: 0;
+            width: 130px;
+        }
+
+        h2{
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
+        .wrapper{
+            flex-direction: column;
+            justify-content: center;
+
+            .info{
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box;
+                padding: 1.5em !important;
+            }
+
+            .form{
+                margin-top: 2em;
+                width: 100% !important;
+                min-width: 100% !important;
+
+                .send{
+                    display: block !important;
+                    text-align: center;
+                    position: relative;
+                    width: 100% !important;
+                    box-sizing: border-box;
+                    a::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 
 }
