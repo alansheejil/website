@@ -1,22 +1,7 @@
 $mainColor : #05a0e3;
 
-/*Icons*/
-h2{
-    position: relative;
-    z-index: 2;
-
-    #dots{
-        z-index: -1;
-    }
-}
-
-.container-inner{
-    width: 90%;
-    margin: 0 auto;
-}
-
 //View background
-.home{
+.homeView{
     background-image:
         url('../Img/Background/wave.svg'),
         url('../Img/Background/wave2.svg');
@@ -27,50 +12,32 @@ h2{
 
     background-repeat: no-repeat;
 
-    #dots{
-        position: absolute;
-        fill: $mainColor;
-        opacity: 50%;
-        top: -5px;
-        left: -10px;
-        width: 40px;
-    }
-    
-    #square,#circle{
-        fill:none;
-        stroke:$mainColor;
-        stroke-width: .6;
-        position: absolute;
-        z-index: -1;
-    }
-
     /*Rental offer*/
     .rentalOffer{
-        background-color: $mainColor;
-        padding: 1.5em;
-        border-radius: 0.2em;
         display:flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         width: 75%;
+        background-color: $mainColor;
+        padding: .5em;
         margin: 0 auto;
-        transform: translateY(-50%);
+        border-radius: 0.2em;
+        transform: translateY(-55%);
         
         p{
-            margin: 0;
             color:white;
-            font-size: 1.15em;
             font-weight: 400;
+            font-size: 1.1em;
         }
 
         a{
             text-decoration: none;
             color:white;
             font-weight: 300;
-            font-size: 1.15em;
+            padding: .5em 2em;
+            font-size: 1.1em;
             border: 0.05em solid white;
-            padding: 0.3em 1.8em;
             border-radius: 0.2em;
             transition: 0.1s ease-in-out;
             position: relative;
@@ -93,26 +60,12 @@ h2{
     }
 
     /*About us*/
-    .aboutUs{
-        padding: 3em 0 3em 0;
+    .aboutUs{   
         position: relative;
 
-        h3{
-            font-size: 1.5em;
-        }
-
-        h2{
-            font-size: 3.5em;
-            margin-bottom: 1em;
-            position: relative;
-        }
-
         .text{
-            margin-left: 40px;
+            margin-left: 2.5em;
             max-width: 500px;
-            p{
-                line-height: 1.5em;
-            }
         
             a{
                 text-decoration: none;
@@ -128,7 +81,7 @@ h2{
                 }
 
                 &:hover{
-                border-bottom:1px solid black;
+                    border-bottom:1px solid black;
                 }
             }
         }
@@ -142,36 +95,51 @@ h2{
 
     /*Certificates*/
     .certificates{
-        padding: 3em 0 3em 0;
-
-        h2{
-            font-size: 3.5em;
-            margin-bottom: 2em;
-        }
-
         .card-container{
             display: flex;
             justify-content: space-between;
-            flex-direction: row;
+            flex-flow:row wrap;
 
             .card{
-                width: 26%;
-                padding: 1.5em;
+                width: 25%;
                 background-color:white;
+                padding: 1.5em;
                 border-radius: .5em;
                 -webkit-box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.55); 
                 box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.55);
+
+                h3{
+                    color:$mainColor;
+                    margin: 0;
+                }
+
+                p{
+                    font-size: .9em;
+                    margin-top: 0;
+                }
+
+                img{
+                    display: block;
+                    margin: 3em auto;
+                    width: 50%;
+                }
+
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                }
 
                 a{
                     color:$mainColor;
                     text-decoration: none;
                     text-align: center;
                     margin: 0 auto;
-                    margin-top: 3em;
+                    width: 60%;
+                    box-sizing: border-box;
+                    padding: .5em;
                     border:0.15em solid $mainColor;
                     border-radius: 0.3em;
                     transition: .1s ease-in-out;
-                    padding: 0.5em 3em;
                     position: relative;
 
                     &:hover{
@@ -193,6 +161,8 @@ h2{
                 .showMore{
                     display:flex;
                     justify-content: center;
+                    margin-top: 0.5em;
+                    font-size: 0.8em;
 
                     a{  
                         transition: none;
@@ -202,7 +172,7 @@ h2{
                         border-bottom: 1px solid white;
                         color:black;
                         padding: 0;
-                        margin-top: .8em;
+                        width: inherit;
 
                         &:hover{
                             border-bottom: 1px solid black;
@@ -215,30 +185,6 @@ h2{
                         }
                     }
                 }
-
-                img{
-                    display: block;
-                    margin: 0 auto;
-                    width: 50%;
-                }
-                
-                h3{
-                    color:$mainColor;
-                    font-size: 1.5em;
-                    margin-bottom: 0.2em;
-                    margin-top: 0;
-                }
-
-                p{
-                    font-size: .9em;
-                    margin-top: 0;
-                    margin-bottom: 2em;
-                }
-            }
-
-            .box{
-                display: flex;
-                flex-direction: column;
             }
         }
     }
@@ -246,17 +192,10 @@ h2{
     /*Portfolio*/
     .portfolio{
         background: none;
-        padding: 3em 0;
         position: relative;
-
-        h2{
-            font-size: 3.5em;
-        }
 
         h3{
             font-size: 2em;
-            max-width: 500px;
-            margin: 2em 0;
         }
 
         #square{
@@ -271,24 +210,38 @@ h2{
     .allWorks{
         background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url('../Img/home-portfolio-stripe-bg.jpg') center center;
         background-size: cover;
-        padding: 3em;
         text-align: center;
-        margin-top: 3em;
         position: relative;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         h3{
-            color:white;
-            font-size: 2em;
             margin-top: 0;
-            margin-bottom: 1.5em;
+            color:white;
         }
 
         a{
             color:white;
             text-decoration: none;
             background-color: $mainColor;
-            padding: .8em 3em;
             border-radius: .3em;
+            padding: .8em 2em;
+            display: inline-block;            
+            font-weight: 300;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                top: 50%;
+                right: -2.5%;
+                content: '';
+                width: 15px;
+                height: 1px;
+                background-color: white;
+            }
         }
 
         #circle{
@@ -303,118 +256,6 @@ h2{
     /*Contact*/
     .contact{
         position: relative;
-        background: none;
-        padding-bottom: 0;
-
-        h2{
-            font-size: 3.5em;
-            margin:2em 0;
-        }
-
-        .wrapper{
-            display: flex;
-            justify-content:space-between;
-            margin-bottom: 3em;
-
-            .info{
-                width: 35%;
-                min-width:200px;
-                max-width: 330px;
-                background-color: $mainColor;
-                color:white;
-                padding: 2.5em;
-                border-radius: .5em;
-                
-                .heading{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-
-                    &:nth-of-type(2),&:nth-of-type(3){
-                        margin-top: 2em;
-                    }
-
-                    h4{
-                        font-size: 1.5em;
-                        font-weight: 500;
-                        margin: 0 0 0 0.5em;
-                    }
-                }
-        
-                p{
-                    margin: 0.5em 0;
-                    font-size: 1em;
-                    font-weight: 300;
-                }
-            }
-
-            .form{
-                width: 40%;
-                min-width: 300px;
-                max-width: 500px;
-                display: flex;
-                flex-direction: column;
-
-                input,textarea{
-                    margin: 1em 0;
-                    display: block;
-                    width: 100%;
-                    box-sizing: border-box;
-                    padding: .7em;
-                    border:0.09em solid #ccc;
-                    border-radius: .3em;
-                    outline: none;
-                    font-size: 1.2em;
-                    font-family: inherit;
-                    -webkit-box-shadow: 0px 2px 7px -5px #000000; 
-                    box-shadow: 0px 2px 7px -5px #000000;
-
-                    &:first-of-type{
-                        margin-top: 0;
-                    }
-                }
-
-                .send{
-                    background-color: $mainColor;
-                    color: white;
-                    width: auto;
-                    padding: .7em 2em;
-                    display: inline-block;
-                    margin-bottom: 0;
-                    margin-top: 2.4em;
-                    -webkit-box-shadow: 0px 2px 7px -5px #000000; 
-                    box-shadow: 0px 2px 7px -5px #000000;
-                    border-radius: .3em;
-                    font-size: 1.2em;
-
-                    a{
-                        color:white;
-                        text-decoration: none;
-                        margin-left: 0.5em;
-                        padding-right: 0.5em;
-                        position: relative;
-
-                        &::after{
-                            content: '';
-                            width: 20px;
-                            height: 2px;
-                            background-color: black;
-                            position: absolute;
-                            top:47%;
-                            right: -60%;
-                        }
-                    }
-                    
-                    &:hover{
-                        cursor: pointer;
-                    }
-                }
-
-                textarea{
-                    height: 10em;
-                }
-            }
-        }
 
         #square{
             top:-15%;
@@ -422,266 +263,315 @@ h2{
             width: 200px;
             transform: rotate(40deg);
         }
-    }
-        /*Media queries - TABLET*/
-        @media screen and (min-width:500px) and (max-width:1100px){
-            /*Rental offer section*/
-            .rentalOffer{
-                width: 100%;
-                box-sizing: border-box;
-                justify-content: space-between;
-                align-items: center;
-            }
+        
+        .wrapper{
+            display: flex;
+            flex-flow:row wrap;
+            justify-content:space-between;
 
-            /*About us section*/
-            .aboutUs{
-                padding: 0;
-            
-                h2{
-                    font-size: 3.25em;
-                    margin-bottom: 0;
-                }
-            
-                .text{
-                    margin-left: 0;
-                }
-            
-                #square{
-                    top: 90%;
-                    right: 0;
-                    width:120px;
-                }
-            }
+            .info{
+                width: 35%;
+                padding: 3em;
+                min-width:200px;
+                max-width: 330px;
+                background-color: $mainColor;
+                color:white;
+                border-radius: .5em;
 
-            /*Certificates section*/
-            .certificates{
-                padding-bottom: 0;
-                h2{
-                    font-size: 3em;
-                    margin-bottom:1em;
+                p{
+                    line-height: 0.5em;
+                    font-weight: 300;
                 }
-
-                .card-container{
-                    width: 100%;
+                
+                .heading{
                     display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-between;
+                    flex-direction: row;
+                    align-items: center;
+                    font-size: 1.2em;
 
-                    .card{
-                        width:46%;
-                        min-width: 215px;
-                        box-sizing: border-box;
-                        margin-bottom: 2em;
-
-                        .box{
-                            > a{
-                                padding: 0.5em 2em;
-                            }
-                        }
-                    }
-                }
-            }
-
-            /*Portfolio section*/
-            .portfolio{
-                padding-top: 0;
-            }
-
-            /*Contact section*/
-            .contact{
-                padding-bottom: 5em;
-
-                #square{
-                    top: -10%;
-                    right: 0;
-                    width: 130px;
-                }
-
-                h2{
-                    font-size: 3em;
-                    margin-bottom: 1em;
-                }
-                .wrapper{
-                    flex-direction: column;
-                    justify-content: center;
-
-                    .info{
-                        width: 100% !important;
-                        max-width: 100% !important;
-                        box-sizing: border-box;
-                        padding: 1.5em !important;
+                    h4{
+                        margin-left: .5em;
+                        margin-top:0;
+                        margin-bottom:0;
                     }
 
-                    .form{
+                    &:nth-of-type(2),&:nth-of-type(3){
                         margin-top: 2em;
-                        width: 100% !important;
-                        min-width: 100% !important;
+                    }
+                }
+            }
 
-                        .send{
-                            display: block !important;
-                            text-align: center;
-                            position: relative;
-                            width: 100% !important;
-                            box-sizing: border-box;
-                            a::after{
-                                display: none;
-                            }
+            .form{
+                width: 40%;
+                min-width: 300px;
+                max-width: 500px;
+
+                input,textarea{
+                    padding: .8em;
+                    font-size: 1.2em;
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
+                    border:0.09em solid #ccc;
+                    border-radius: .3em;
+                    outline: none;
+                    font-family: inherit;
+                    -webkit-box-shadow: 0px 2px 7px -5px #000000; 
+                    box-shadow: 0px 2px 7px -5px #000000;
+                    margin: 1.5em 0;
+                }
+
+                textarea{
+                    height: 10em;
+                }
+
+                input:first-of-type{
+                    margin-top: 0;
+                }
+
+                .send{
+                    background-color: $mainColor;
+                    color: white;
+                    width: auto;
+                    display: inline-block;
+                    margin-top: 2em;
+                    padding: 1em 3em;
+                    -webkit-box-shadow: 0px 2px 7px -5px #000000; 
+                    box-shadow: 0px 2px 7px -5px #000000;
+                    border-radius: .3em;
+
+                    a{
+                        color:white;
+                        text-decoration: none;
+                        position: relative;
+                        margin-left: 0.5em;
+
+                        &::after{
+                            content: '';
+                            width: 25px;
+                            height: 1px;
+                            background-color: black;
+                            position: absolute;
+                            top:47%;
+                            right: -100%;
                         }
                     }
-                }
-            }
-        }
-
-        @media screen and (max-width:600px){
-            /*Certificates section*/
-            .certificates{
-                h2{
-                    font-size: 3em;
-                    margin-bottom:0.5em;
-                }
-
-                .card-container{
-                    flex-direction: column;
-
-                    .card{
-                        width: 100% !important;
-                        box-sizing: border-box;
-                        margin: 1em 0;
+                    
+                    &:hover{
+                        cursor: pointer;
                     }
                 }
             }
         }
+    }       
+}
 
-        /*Media queries - MOBILE*/
-        @media screen and (max-width:500px){
-            #dots{
-                left: -3.5%;
-                top: -10.5%;
-                width: 35px;
+/*Media queries*/
+@media screen and (max-width:1100px){
+    .homeView{
+        /*about us section*/
+        .rentalOffer{
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        /*about us section*/
+        .aboutUs{
+            #square{
+                top:0;
+            }
+        }
+
+        /*certificates section*/
+        .certificates{
+            display: inline-block;
+            .card-container{
+                .card{
+                    width: 39.8%;
+                }
+
+                .card:nth-of-type(1){
+                    margin-right: .5em;
+                }
+
+                .card:nth-of-type(2){
+                    margin-left: .5em;
+                }
+                
+                .card:nth-of-type(3){
+                    margin-top: 1.5em;
+                }
+      
+            }
+        }
+
+        /*Contact section*/
+        .contact{
+            .wrapper{
+                .info{
+                    padding: 2em;
+                    width: 30%;
+                    min-width: 33%;
+                }
+
+                .form{
+                    width: 37%;
+                    min-width: 51%;
+
+                    textarea{
+                        height: 6em;
+                    }
+                }
             }
 
-            /*Rental offer section*/
-            .rentalOffer{
+        }
+    }
+}
+
+@media screen and (max-width:770px){
+    .homeView{
+        .section{
+            padding: 2em 0;
+        }
+
+        .container-inner{
+            width: 100%;
+        }
+
+        /*about us section*/
+        .aboutUs{
+            .text{
+                margin-left: 0 !important;
+                max-width: 100%;
+            }
+        }
+
+        /*certificates section*/
+        .certificates{
+            .card-container{
+                justify-content: center;
+                .card{
+                    max-width: 60%;
+                    margin: 0;
+                    width: 100%;
+                }
+
+                .card:nth-of-type(1){
+                    margin-right: 0;
+                }
+                
+                .card:nth-of-type(2){
+                    margin-top: 2em;
+                    margin-left: 0;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+
+        /*contact section*/
+        .contact{
+            margin-bottom: 180px !important;
+
+            .wrapper{
+                justify-content: center;
+
+                .info{
+                    width: 60%;
+                    max-width: 100%;
+                    box-sizing: border-box;
+                    min-width: 100%;
+                }
+
+                .form{
+                    margin-top: 2em;
+                    width: 60%;
+                    max-width: 100%;
+                    min-width: 100%;
+                }
+
+                .send{
+                    display: block;
+                    text-align: center;
+                    width: 100% !important;
+                    max-width: 100%;
+                    box-sizing: border-box;
+
+                    a::after{
+                        height: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+    .homeView{
+        .rentalOffer{
+            display: none;
+        }
+
+        .aboutUs{
+            #square{
                 display: none;
             }
-
-            /*About us section*/
-            .aboutUs{
-                padding: 0;
-
-                h2{
-                    font-size: 3em;
-                    margin-bottom: 0;
-                }
-
-                .text{
-                    margin-left: 0;
-                }
-
-                #square{
-                    top: 90%;
-                    right: 0;
-                    width:120px;
-                }
-            }
-
-            /*Certificates section*/
-            .certificates{
-                h2{
-                    font-size: 3em;
-                    margin-bottom:0.5em;
-                }
-
-                .card-container{
-                    flex-direction: column;
-
-                    .card{
-                        width: 100% !important;
-                        box-sizing: border-box;
-                        margin: 1em 0;
-                    }
-                }
-            }
-
-            /*Portfolio section*/
-            .portfolio{
-                padding-top: 0;
-
-                #square{
-                    top: -10%;
-                    right: -30%;
-                }
-
-                h2{
-                    font-size: 3em;
-                    margin-bottom: 0em !important;
-                }
-
-                h3{
-                    font-size: 1.5em;
-                    margin-top: 1em;
-                    margin-bottom: 1.5em;
-                }
-            }
-
-            /*All works section*/
-            .allWorks{
-                padding: 3em 0;
-                h3{
-                    font-size: 1.8em;
-                    margin-top: -.7em;
-                }
-               
-                a{
-                    margin-bottom: 1em;
-                }
-            }
-
-            /*Contact section*/
-            .contact{
-                padding-bottom: 5em;
-
-                #square{
-                    top: -10%;
-                    right: 0;
-                    width: 130px;
-                }
-
-                h2{
-                    font-size: 3em;
-                    margin-bottom: 1em;
-                }
-                .wrapper{
-                    flex-direction: column;
-                    justify-content: center;
-
-                    .info{
-                        width: 100% !important;
-                        max-width: 100% !important;
-                        box-sizing: border-box;
-                        padding: 1.5em !important;
-                    }
-
-                    .form{
-                        margin-top: 2em;
-                        width: 100% !important;
-                        min-width: 100% !important;
-
-                        .send{
-                            display: block !important;
-                            text-align: center;
-                            position: relative;
-                            width: 100% !important;
-                            box-sizing: border-box;
-                            a::after{
-                                display: none;
-                            }
-                        }
-                    }
-                }
-            }
-
-            
         }
+    }
 }
+
+
+@media screen and (max-width:400px){
+    h2{
+        font-size: 40px;
+    }
+
+    h3{
+        font-size: 25px !important;
+    }
+
+    .section{
+        padding: 2em 0;
+    }
+
+    .homeView{
+        /*rental offer section*/
+        .rentalOffer{
+            display: none;
+        }
+
+        #square,#circle{
+            display: none;
+        }
+
+        /*about us section*/
+        .aboutUs{
+            p{
+                font-size: 15px;
+            }
+        }
+
+        /*certificates section*/
+        .certificates{
+            .card-container{
+                .card{
+                    width: 100%;
+                    max-width: 100%;   
+                }
+
+                .card:nth-of-type(3){
+                    margin-top: 0;
+                }
+            }
+        }
+
+        /*portfolio section*/
+        .portfolio{
+            #square{
+                display: none;
+            }
+        }
+    }
+
+}
+
 

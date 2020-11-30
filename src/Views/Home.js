@@ -28,7 +28,7 @@ import { NavLink } from 'react-router-dom';
 
 function Home(){
     return(
-        <div className="home">
+        <div className="homeView">
             <Carousel />
 
             <div className="container">
@@ -37,7 +37,7 @@ function Home(){
                     <NavLink to="/rental">Prenajať</NavLink>
                 </div>
 
-                <div className="aboutUs">
+                <div className="aboutUs section">
                     <h2>O nás <Dots /></h2>
 
                     <div className="container-inner">
@@ -54,7 +54,7 @@ function Home(){
                     <Square />
                 </div>
 
-                <div className="certificates">
+                <div className="certificates section">
                     <h2>Certifikáty <Dots /></h2>
 
                     <div className="container-inner">
@@ -105,7 +105,7 @@ function Home(){
                     </div>
                 </div>
 
-                <div className="portfolio">
+                <div className="portfolio section">
                     <h2>Portfólio <Dots /></h2>
 
                     <div className="container-inner">
@@ -126,7 +126,7 @@ function Home(){
                 </div>        
             </div>
 
-            <div className="contact">
+            <div className="contact section">
                 <div className="container">
                     <h2>Kontakt <Dots /></h2>
 

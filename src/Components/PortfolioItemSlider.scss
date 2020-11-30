@@ -6,6 +6,22 @@ $mainColor : #05a0e3;
         overflow-x: hidden;
     }
 
+    
+    .slide{
+        .image{
+            margin: 0 -10px;
+            padding:0 15px;
+
+
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: .5em;
+            }
+        }
+    }
+
     #nextSlide,#prevSlide{
         width: 40px;
         height: 40px;
@@ -34,20 +50,6 @@ $mainColor : #05a0e3;
     }
 }
 
-.slide{
-    .image{
-        margin: 0 -10px;
-        padding:0 15px;
-
-
-        img{
-            display: block;
-            width: 100%;
-            height: auto;
-            border-radius: .5em;
-        }
-    }
-}
 
 
 

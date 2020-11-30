@@ -1,22 +1,10 @@
 $mainColor : #05a0e3;
 
-/*Icons*/
-h2{
-    position: relative;
-    z-index: 2;
-
-    #dots{
-        z-index: -1;
-    }
-}
-
-.contact{
+.contactView{
     background: url('../Img/Background/excavator-background.png') no-repeat;
     background-position-y:100%;
     background-position-x:100%;
     background-size: 40%;
-
-    padding-bottom: 4em;
     position: relative;
 
     #dots{
@@ -40,45 +28,42 @@ h2{
         z-index: -1;
     }
 
-    .container-inner{
-        width: 90%;
-        margin: 0 auto;
-
+    /*Contact form section*/
+    .contactForm{
         .wrapper{
             display: flex;
+            flex-flow:row wrap;
             justify-content:space-between;
-            margin-bottom: 3em;
-            width: 100%;
     
             .info{
                 width: 35%;
+                padding: 3em;
                 min-width:200px;
                 max-width: 330px;
                 background-color: $mainColor;
                 color:white;
-                padding: 2.5em;
                 border-radius: .5em;
+    
+                p{
+                    line-height: 0.5em;
+                    font-weight: 300;
+                }
                 
                 .heading{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    font-size: 1.2em;
+    
+                    h4{
+                        margin-left: .5em;
+                        margin-top:0;
+                        margin-bottom:0;
+                    }
     
                     &:nth-of-type(2),&:nth-of-type(3){
                         margin-top: 2em;
                     }
-    
-                    h4{
-                        font-size: 1.5em;
-                        font-weight: 500;
-                        margin: 0 0 0 0.5em;
-                    }
-                }
-        
-                p{
-                    margin: 0.5em 0;
-                    font-size: 1em;
-                    font-weight: 300;
                 }
             }
     
@@ -86,56 +71,55 @@ h2{
                 width: 40%;
                 min-width: 300px;
                 max-width: 500px;
-                display: flex;
-                flex-direction: column;
     
                 input,textarea{
-                    margin: 1em 0;
+                    padding: .8em;
+                    font-size: 1.2em;
                     display: block;
                     width: 100%;
                     box-sizing: border-box;
-                    padding: .7em;
                     border:0.09em solid #ccc;
                     border-radius: .3em;
                     outline: none;
-                    font-size: 1.2em;
                     font-family: inherit;
                     -webkit-box-shadow: 0px 2px 7px -5px #000000; 
                     box-shadow: 0px 2px 7px -5px #000000;
+                    margin: 1.5em 0;
+                }
     
-                    &:first-of-type{
-                        margin-top: 0;
-                    }
+                textarea{
+                    height: 10em;
+                }
+    
+                input:first-of-type{
+                    margin-top: 0;
                 }
     
                 .send{
                     background-color: $mainColor;
                     color: white;
                     width: auto;
-                    padding: .7em 2em;
                     display: inline-block;
-                    margin-bottom: 0;
-                    margin-top: 2.4em;
+                    margin-top: 2em;
+                    padding: 1em 3em;
                     -webkit-box-shadow: 0px 2px 7px -5px #000000; 
                     box-shadow: 0px 2px 7px -5px #000000;
                     border-radius: .3em;
-                    font-size: 1.2em;
     
                     a{
                         color:white;
                         text-decoration: none;
-                        margin-left: 0.5em;
-                        padding-right: 0.5em;
                         position: relative;
+                        margin-left: 0.5em;
     
                         &::after{
                             content: '';
-                            width: 20px;
-                            height: 2px;
+                            width: 25px;
+                            height: 1px;
                             background-color: black;
                             position: absolute;
                             top:47%;
-                            right: -60%;
+                            right: -100%;
                         }
                     }
                     
@@ -143,77 +127,57 @@ h2{
                         cursor: pointer;
                     }
                 }
-    
-                textarea{
-                    height: 10em;
-                }
-            }
-        }
-    
-        .rental{
-            width:100%;
-            margin: 0 auto;
-            margin-top: 15%;
-            background: none;
-
-            h3{
-                font-size: 2em;
-                margin-bottom: 1em;
-            }
-
-            h1{
-                font-size: 5em;
-                margin:0;
-                color:$mainColor;
-                margin-left: 40px;
-            }
-
-            p{
-                margin-left: 40px;
-                font-size: 1.2em;
-                font-weight: 400;
             }
         }
     }
+    
+    /*Rental section*/
+    .rental{
+        width:100%;
+        margin: 0 auto;
+        background: none;
 
-    /*Media queries*/
-    @media screen and (min-width:500px) and (max-width:1100px){
-        padding-bottom: 5em;
-
-        #square{
-            top: -10%;
-            right: 0;
-            width: 130px;
-        }
-
-        h2{
-            font-size: 3em;
+        h3{
+            font-size: 2em;
             margin-bottom: 1em;
         }
-        .wrapper{
-            flex-direction: column;
-            justify-content: center;
 
-            .info{
-                 width: 100% !important;
-                 max-width: 100% !important;
-                box-sizing: border-box;
-                padding: 1.5em !important;
-            }
+        h1{
+            font-size: 5em;
+            margin:0;
+            color:$mainColor;
+            margin-left: 40px;
+        }
 
-            .form{
-                margin-top: 2em;
-                width: 100% !important;
-                min-width: 100% !important;
+        p{
+            margin-left: 40px;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+}
 
-                .send{
-                    display: block !important;
-                    text-align: center;
-                    position: relative;
-                    width: 100% !important;
-                    box-sizing: border-box;
-                    a::after{
-                        display: none;
+/*Media queries*/
+@media screen and (max-width:1100px){
+    .contactView{
+        #square{
+            width: 200px;
+        }
+
+        .contactForm{
+            .wrapper{
+                .info{
+                    padding: 2em;
+                    width: 30%;
+                    min-width: 33%;
+                }
+
+                .form{
+                    width: 37%;
+                    min-width: 51%;
+
+                    textarea{
+                        height: 6em;
                     }
                 }
             }
@@ -221,83 +185,87 @@ h2{
 
         .rental{
             h1{
-                font-size: 4em !important;
-                margin-left: 0 !important;
+                font-size: 3.8em;
+                margin-left: 0;
             }
 
             p{
-                margin-left: 0 !important;
+                margin-left: 0;
             }
         }
     }
+}
 
-    @media screen and  (max-width:750px){
-        .rental{
-            h1{
-                font-size: 2.5em !important;
-                margin-left: 0 !important;
-            }
-
-            p{
-                margin-left: 0 !important;
-            }
+@media screen and (max-width:770px){
+    .contactView{
+        .section{
+            padding: 2em 0;
         }
-    }
-
-    @media screen and  (max-width:510px){
-        .rental{
-            h1{
-                font-size: 2em !important;
-                margin-left: 0 !important;
-            }
-
-            p{
-                margin-left: 0 !important;
-            }
+    
+        .container-inner{
+            width: 100%;
         }
-    }
-
-    @media screen and (max-width:500px){
-        padding-bottom: 5em;
 
         #square{
-            top: -10%;
-            right: 0;
-            width: 130px;
+            display: none ;
         }
 
-        h2{
-            font-size: 3em;
-            margin-bottom: 1em;
-        }
-        .wrapper{
-            flex-direction: column;
-            justify-content: center;
+        .contactForm{
+            .wrapper{
+                justify-content: center;
 
-            .info{
-                width: 100% !important;
-                max-width: 100% !important;
-                box-sizing: border-box;
-                padding: 1.5em !important;
-            }
+                .info{
+                    width: 60%;
+                    max-width: 100%;
+                    box-sizing: border-box;
+                    min-width: 100%;
+                }
 
-            .form{
-                margin-top: 2em;
-                width: 100% !important;
-                min-width: 100% !important;
+                .form{
+                    margin-top: 2em;
+                    width: 60%;
+                    max-width: 100%;
+                    min-width: 100%;
+                }
 
                 .send{
-                    display: block !important;
+                    display: block;
                     text-align: center;
-                    position: relative;
                     width: 100% !important;
+                    max-width: 100%;
                     box-sizing: border-box;
+
                     a::after{
-                        display: none;
+                        height: 0 !important;
                     }
                 }
             }
         }
+
+        .rental{
+            margin-bottom: 180px !important;
+
+            h1{
+                font-size: 8vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    h2{
+        font-size: 40px;
     }
 
+    h3{
+        font-size: 25px !important;
+    }
+
+    .section{
+        padding: 2em 0;
+    }
+
+    .contactView{
+        background:none;
+    }
 }

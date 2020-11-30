@@ -1,3 +1,6 @@
+/*General*/
+$mainColor : #05a0e3;
+
 html{
     scroll-behavior: smooth;
 }
@@ -17,11 +20,62 @@ body{
     max-width: 1300px;
 }
 
+.container-inner{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .wrapper{
     overflow-x: hidden;
 }
+
+.section{
+    padding: 3em 0;
+}
+
+/*Headings and paragraphs*/
+h2{
+    font-size:3em;
+}
+
+h3{
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+/*Icons*/
+#dots{
+    position: absolute;
+    fill: $mainColor;
+    opacity: 50%;
+    top: -5px;
+    left: -14px;
+    width: 40px;
+}
+
+h2{
+    position: relative;
+    z-index: 2;
+
+    #dots{
+        z-index: -1;
+    }
+}
+
+#square,#circle{
+    fill:none;
+    stroke:$mainColor;
+    stroke-width: .6;
+    position: absolute;
+    z-index: -1;
+}
   
 /*Transitions*/
+/*Slide forward*/
 .slide-forward-enter{
     opacity: 0;
     transform: translateX(100%);
@@ -44,7 +98,7 @@ body{
     transform: translateX(-100%);
 }
 
-/*Slide back*/
+/*Slide backward*/
 .slide-backward-enter{
     opacity: 0;
     transform: translateX(-100%);

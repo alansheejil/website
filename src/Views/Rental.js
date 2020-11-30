@@ -18,28 +18,31 @@ import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 //Components
 import RentalSlider from '../Components/RentalSlider';
 
+
 import introImage from '../Img/rental-intro-excavator.jpg';
 
 function Rental(){
     return(
-        <div className="rental">
-            <div className="intro">
+        <div className="rentalView">
+            <div className="intro section">
                 <div className="container">
                     <p>Špičkové stroje za super ceny</p>
                     <h1>Prenájom techniky</h1>
 
-                    <NavLink to="/contact">Kontakt</NavLink>
+                    
                     
                     <div className="image">
                         <img src={introImage} alt="rental-intro" />
                         <Square />
                     </div>
+
+                    <NavLink to="/contact">Kontakt</NavLink>
                 </div>
 
                 <Circle />
             </div>
 
-            <div className="ourMachinery">
+            <div className="ourMachinery section">
                 <div className="container">
                     <h2>Naša technika <Dots /></h2>
 
@@ -238,25 +241,28 @@ function Rental(){
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div className="price-list">
-                        <div className="container-inner">
-                            <h3>Cenník <Square /> </h3>
+            <div className="price-list section">
+                <div className="container">
+                    <div className="container-inner">
+                        <h3>Cenník <Square /> </h3>
 
-                            <p>Powder jujubes sugar plum bonbon. Caramels gingerbread tootsie roll tart cupcake. Tiramisu sweet roll gummies gingerbread.</p>
+                        <p>Powder jujubes sugar plum bonbon. Caramels gingerbread tootsie roll tart cupcake. Tiramisu sweet roll gummies gingerbread.</p>
 
-                            <p className="price">Zobraziť cenník</p>
-                        </div>
+                        <p className="price">Zobraziť cenník</p>
                     </div>
+                </div>
+            </div>
 
-                    <div className="reservation">
-                        <div className="container-inner">
-                            <h3>Rezervácia strojov <Square /> </h3>
+            <div className="reservation section">
+                <div className="container">
+                    <div className="container-inner">
+                        <h3>Rezervácia strojov <Square /> </h3>
 
-
-                            <h1>+421 900 000 000</h1>
-                            <p>email@company.com</p>
-                        </div>
+                        <h1>+421 900 000 000</h1>
+                        <p>email@company.com</p>
                     </div>
                 </div>
             </div>

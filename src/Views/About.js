@@ -23,9 +23,9 @@ import Triangle from '../Icons/Triangle';
 
 function About(){
     return(
-        <div className="about">
+        <div className="aboutView">
             <div className="container">
-                <div className="aboutUs">
+                <div className="aboutUs section">
                     <h2>O nás <Dots /></h2>
 
                     <div className="container-inner">
@@ -44,7 +44,7 @@ function About(){
                     <Square />
                 </div>
 
-                <div className="whatWeDo">
+                <div className="whatWeDo section">
                     <h2>Čo robíme <Dots /></h2>
 
                     <div className="container-inner">
@@ -85,7 +85,7 @@ function About(){
                     <Circle />
                 </div>
 
-                <div className="ourStandards">
+                <div className="ourStandards section">
                     <h2>Naše štandardy <Dots /> </h2>
                     
                     <div className="container-inner">

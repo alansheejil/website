@@ -56,19 +56,64 @@ function RentalSlider(){
         nextArrow:<SlickArrowRight />,
         autoplay:false,
         slidesToShow:1,
-        slidesToScroll:1
+        slidesToScroll:1,
+        responsive: [
+          {
+            breakpoint: 1100,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+      ]
     }
 
     return(
         <div className="rentalSlider">
             <Slider {...settings}>
                 <div className="slide">
-                    <img src={SliderImage} alt="rental-example" />
+                    <div className="image">
+                      <img src={SliderImage} alt="rental-example" />
+                    </div>
                 </div>
 
                 <div className="slide">
-                    <img src={SliderImage} alt="rental-example" />
-                </div>         
+                    <div className="image">
+                      <img src={SliderImage} alt="rental-example" />
+                    </div>
+                </div>
+
+                <div className="slide">
+                    <div className="image">
+                      <img src={SliderImage} alt="rental-example" />
+                    </div>
+                </div>
+
+                <div className="slide">
+                    <div className="image">
+                      <img src={SliderImage} alt="rental-example" />
+                    </div>
+                </div>
+
+                <div className="slide">
+                    <div className="image">
+                      <img src={SliderImage} alt="rental-example" />
+                    </div>
+                </div>
+
+                <div className="slide">
+                    <div className="image">
+                      <img src={SliderImage} alt="rental-example" />
+                    </div>
+                </div>
+ 
             </Slider>
         </div>
     )

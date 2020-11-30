@@ -6,6 +6,7 @@ $mainColor : #05a0e3;
             display: block;
             width: 100%;
             height: auto;
+            border-radius: .5em;
         }
     }
 
@@ -34,10 +35,6 @@ $mainColor : #05a0e3;
     
     .slick-prev::before{
         content: '';
-    }
-
-    .slide{
-        background-color: #ccc;
     }
 }
 

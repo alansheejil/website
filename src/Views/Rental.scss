@@ -1,21 +1,6 @@
 $mainColor : #05a0e3;
 
-/*Icons*/
-h2{
-    position: relative;
-    z-index: 2;
-
-    #dots{
-        z-index: -1;
-    }
-}
-
-.container-inner{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.rental{
+.rentalView{
     background: 
         url('../Img/Background/lifter-background.png') no-repeat,
         url('../Img/Background/wave6.svg') no-repeat,
@@ -52,7 +37,6 @@ h2{
     }
 
     .intro{
-        padding-top: 5em;
         position: relative;
 
         #circle{
@@ -103,7 +87,7 @@ h2{
             border-radius: .5em;
             position: absolute;
             right: 10%;
-            top: 50%;
+            top: 60%;
             transform: rotate(10deg);
             
             
@@ -124,11 +108,14 @@ h2{
     }
 
     .ourMachinery{
-        margin-top: 20%;
+        margin-top: 10em;
+
+        h2{
+            font-size: 4em;
+        }
+
         p{
-            font-weight: 400;
             font-size: 1.1em;
-            line-height: 1.5em;
             max-width: 600px;
         }
 
@@ -138,15 +125,19 @@ h2{
                 flex-direction: row;
                 justify-content: space-between;
                 margin:5em 0;
+                flex-wrap: wrap;
 
                 .slider{
                     width: 32%;
+                    min-width: 350px;
                     height: auto;
                 }
 
                 .description{
+                    width: 50%;
+
                     h3{
-                        font-size: 2.5vw;
+                        font-size: 2.5em;
                         margin:0;
                         position: relative;
                         z-index: 2;
@@ -165,7 +156,7 @@ h2{
                     }
 
                     p{
-                        font-size: 1.05vw;
+                        font-size: 1.1em;
                         margin:0;
                     }
 
@@ -208,6 +199,10 @@ h2{
                 }
             }
         }
+
+        .machine-container .machine:last-child{
+            margin-bottom: 0; 
+        }
     }
 
     .price-list{
@@ -226,6 +221,11 @@ h2{
                 transform: rotate(20deg);
                 z-index: -1;
             }
+        }
+
+        p{
+            max-width: 600px;
+            font-size: 1.1em;
         }
 
         .price{
@@ -258,7 +258,6 @@ h2{
     .reservation{
         width:100%;
         margin: 0 auto;
-        margin-top: 15%;
 
         h3{
             position: relative;
@@ -288,6 +287,155 @@ h2{
             margin-left: 40px;
             font-size: 1.2em;
             font-weight: 400;
+        }
+    }
+}
+
+//Media queries
+@media screen and (max-width:1100px){
+    .rentalView{
+        .intro{
+            h1{
+                font-size: 4em;
+            }
+
+            .image{
+                width: 300px;
+                top:60%;
+
+                #square{
+                    margin-left: -129%;
+                    margin-top: -3%;
+                }
+            }
+        }
+
+        .ourMachinery{
+            h2{
+                font-size: 3em;
+            }
+
+            .machine-container{
+                .machine{
+                    flex-direction: column;
+
+                    .description{
+                        width: 100%;
+                    }
+
+                    .slider{
+                        margin-top: 2em;
+                        width: 100% !important;
+                    }
+
+                    .slide .image{
+                        margin: 0 -10px;
+                        padding:0 15px;
+                    }
+
+                    #prevSlide{
+                        left:-15px;
+                    }
+
+                    #nextSlide{
+                        right:-15px;
+                    }
+                }
+            }
+        }
+
+        .reservation{
+            h1{
+                font-size: 3.8em;
+                margin-left: 0;
+            }
+
+            p{
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:770px){
+    .rentalView{
+        .section{
+            padding: 2em 0;
+        }
+
+        .container-inner{
+            width: 100%;
+        }
+
+        .intro{
+            h1{
+                font-size: 3em;
+            }
+
+            .image{
+                display: block;
+                position: static;
+                margin: 0 auto;
+                width: 50%;
+                min-width: 280px;
+                margin-top: 6em;
+
+                #square{
+                    top:-25px;
+                }
+            }
+        }
+
+        .reservation{
+            margin-bottom: 180px !important;
+
+            h1{
+                font-size: 8vw;
+            }
+        }
+    }
+
+    .ourMachinery{
+        margin-top: 0 !important;
+
+        .machine{
+            .slider{
+                min-width: 100% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    .rentalView{
+        h2{
+            font-size: 40px !important;
+        }
+    
+        h3{
+            font-size: 25px !important;
+        }
+
+        .intro{
+            h1{
+                font-size: 3em;
+            }
+
+            .image{
+                min-width: 230px;
+
+                #square{
+                    width: 320px;
+                    top:-10px;
+                    right:-20px;
+                }
+            }
+        }
+
+        .reservation{
+            h1{
+                font-size: 2em;
+            }
         }
     }
 }
