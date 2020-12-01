@@ -2,11 +2,11 @@ $mainColor : #05a0e3;
 
 nav{
     overflow-x: hidden;
-    padding: 1em 0;
-    font-size: 1.05em;
+    font-size: 1em;
+    padding: 1.5em 0;
 
     h3{
-        margin-bottom:1.05em;
+        margin:0;
     }
 
     .nav-items{
@@ -46,6 +46,7 @@ nav{
         .menu ul{
             list-style: none;
             padding-left: 0;
+            margin: 0;
 
             li{
                 display: inline-block;

@@ -85,7 +85,7 @@ function PortfolioSlider(){
                     <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
-                        <h4>Some construction</h4>
+                        <h5>Some construction</h5>
 
                         <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
 
@@ -97,20 +97,7 @@ function PortfolioSlider(){
                     <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
-                        <h4>Some construction</h4>
-
-                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
-
-                        <a href="#sa">Zobraziť viac</a>
-                    </div>  
-                </div>
-
-                
-                <div className="slide">
-                    <img src={SliderImage} alt="portfolio-example" />
-                    <div className="text">
-                        <p>Výstavba</p>
-                        <h4>Some construction</h4>
+                        <h5>Some construction</h5>
 
                         <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
 
@@ -123,7 +110,7 @@ function PortfolioSlider(){
                     <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
-                        <h4>Some construction</h4>
+                        <h5>Some construction</h5>
 
                         <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
 
@@ -136,7 +123,7 @@ function PortfolioSlider(){
                     <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
-                        <h4>Some construction</h4>
+                        <h5>Some construction</h5>
 
                         <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
 
@@ -149,7 +136,20 @@ function PortfolioSlider(){
                     <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
-                        <h4>Some construction</h4>
+                        <h5>Some construction</h5>
+
+                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
+
+                        <a href="#sa">Zobraziť viac</a>
+                    </div>  
+                </div>
+
+                
+                <div className="slide">
+                    <img src={SliderImage} alt="portfolio-example" />
+                    <div className="text">
+                        <p>Výstavba</p>
+                        <h5>Some construction</h5>
 
                         <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
 

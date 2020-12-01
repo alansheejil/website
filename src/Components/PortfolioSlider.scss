@@ -1,6 +1,8 @@
 $mainColor : #05a0e3;
 
 .portfolioSlider{
+    margin-bottom: 3em;
+
     .slider{
         width: 100%;
         overflow-x: hidden;
@@ -52,16 +54,23 @@ $mainColor : #05a0e3;
     
             .text{
                 padding: 2em;
+                text-align: center;
 
                 p:first-of-type{
                     color:$mainColor;
                     margin:0;
+                    text-align: left ;
                 }
 
-                h4{
-                    font-size: 1.3em;
+                h5{
                     margin-top: 0.2em;
                     margin-bottom: 0;
+                    text-align: left;
+                }
+
+                p{
+                    font-size: .9em;
+                    text-align: left;
                 }
 
                 a{
@@ -69,12 +78,12 @@ $mainColor : #05a0e3;
                     color: $mainColor;
                     border: 0.12em solid $mainColor;
                     border-radius: 0.3em;
-                    display: block;
-                    padding: 0.5em 1em;
-                    text-align: center;
-                    margin: 0 auto;
+                    display: inline-block;
+                    padding: 0.5em 1.5em;
+                    margin-top: 1em;
                     transition: 0.1s ease-in-out;
                     position: relative;
+                    font-size: .9em;
 
                     &:hover{
                         background-color: $mainColor;

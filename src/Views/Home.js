@@ -41,7 +41,7 @@ function Home(){
                     <h2>O nás <Dots /></h2>
 
                     <div className="container-inner">
-                        <h3>Company name</h3>
+                        <h4>Company name</h4>
                         <div className="text">
                             <p>Naša spoločnosť bola založená v roku 2004. Od svojho vzniku sme realizovali desiatky stavebných projektov rôzneho charakteru. Cieľom všetkých našich činností je vždy plné uspokojenie požiadaviek a potrieb zákazníka.</p>
 
@@ -60,7 +60,7 @@ function Home(){
                     <div className="container-inner">
                         <div className="card-container">
                             <div className="card">
-                                <h3>ISO 9001</h3>
+                                <h4>ISO 9001</h4>
                                 <p>Certifikát kvality</p>
                                 <img src={ISO9001} alt="ISO9001 Certificate" />
 
@@ -75,7 +75,7 @@ function Home(){
                             </div>
 
                             <div className="card">
-                                <h3>ISO 14001</h3>
+                                <h4>ISO 14001</h4>
                                 <p>Certifikát enviromentu</p>
                                 <img src={ISO14001} alt="ISO14001 Certificate" />
 
@@ -89,7 +89,7 @@ function Home(){
                             </div>
 
                             <div className="card">
-                                <h3>OHSAS 18001</h3>
+                                <h4>OHSAS 18001</h4>
                                 <p>Certifikát bezpečnosti</p>
                                 <img src={ISO18001} alt="ISO18001 Certificate" />
 
@@ -109,7 +109,7 @@ function Home(){
                     <h2>Portfólio <Dots /></h2>
 
                     <div className="container-inner">
-                        <h3>Naše najnovšie práce</h3>
+                        <h4>Naše najnovšie práce</h4>
 
                         <Square />
                         <PortfolioSlider />
@@ -133,27 +133,33 @@ function Home(){
                     <div className="container-inner">
                         <div className="wrapper">
                             <div className="info">
-                                <div className="heading">
-                                    <FontAwesomeIcon icon={faMapMarkerAlt} />
-                                    <h4>Kde sme</h4>
+                                <div className="column">
+                                    <div className="heading">
+                                        <FontAwesomeIcon icon={faMapMarkerAlt} />
+                                        <h4>Kde sme</h4>
+                                    </div>
+                                    <p>Kukučínova 533/28</p>
+                                    <p>927 01</p>
+                                    <p>Šaľa</p>
                                 </div>
-                                <p>Kukučínova 533/28</p>
-                                <p>927 01</p>
-                                <p>Šaľa</p>
+                                    
+                                <div className="column">
+                                    <div className="heading">
+                                        <FontAwesomeIcon icon={faPhoneAlt} /> 
+                                        <h4>Kontakt</h4>
+                                    </div>
+                                    <p>0900 000 000</p>
+                                    <p>email@company.com</p>
+                                </div>
                                 
-                                <div className="heading">
-                                    <FontAwesomeIcon icon={faPhoneAlt} /> 
-                                    <h4>Kontakt</h4>
+                                <div className="column">
+                                    <div className="heading">
+                                        <FontAwesomeIcon icon={faClock} />
+                                        <h4>Pracovná doba</h4>
+                                    </div>
+                                    <p>Pondelok - piatok</p>
+                                    <p>8:00 - 18:00</p>
                                 </div>
-                                <p>0900 000 000</p>
-                                <p>email@company.com</p>
-
-                                <div className="heading">
-                                    <FontAwesomeIcon icon={faClock} />
-                                    <h4>Pracovná doba</h4>
-                                </div>
-                                <p>Pondelok - piatok</p>
-                                <p>8:00 - 18:00</p>
                             </div>
 
                             <div className="form">

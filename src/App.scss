@@ -3,6 +3,7 @@ $mainColor : #05a0e3;
 
 html{
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 html,body{
@@ -35,12 +36,20 @@ body{
 
 /*Headings and paragraphs*/
 h2{
-    font-size:3em;
+    font-size:2.5em;
 }
 
 h3{
+    font-size: 2em;
+    
+}
+
+h4{
     font-size: 1.5em;
-    margin-bottom: 1.5em;
+}
+
+h5{
+    font-size: 1em;
 }
 
 p{
@@ -52,9 +61,9 @@ p{
     position: absolute;
     fill: $mainColor;
     opacity: 50%;
-    top: -5px;
-    left: -14px;
-    width: 40px;
+    top: 0px;
+    left: -9px;
+    width: 30px;
 }
 
 h2{
