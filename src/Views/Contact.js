@@ -20,31 +20,38 @@ function Contact(){
             <div className="container">
                 <div className="contactForm section">
                     <h2>Kontakt <Dots /></h2>
+                    <Square />
 
                     <div className="container-inner">
                         <div className="wrapper">
                             <div className="info">
-                                <div className="heading">
-                                    <FontAwesomeIcon icon={faMapMarkerAlt} />
-                                    <h4>Kde sme</h4>
+                                <div className="column">
+                                    <div className="heading">
+                                        <FontAwesomeIcon icon={faMapMarkerAlt} />
+                                        <h4>Kde sme</h4>
+                                    </div>
+                                    <p>Kukučínova 533/28</p>
+                                    <p>927 01</p>
+                                    <p>Šaľa</p>
                                 </div>
-                                <p>Kukučínova 533/28</p>
-                                <p>927 01</p>
-                                <p>Šaľa</p>
+                                    
+                                <div className="column">
+                                    <div className="heading">
+                                        <FontAwesomeIcon icon={faPhoneAlt} /> 
+                                        <h4>Kontakt</h4>
+                                    </div>
+                                    <p>0900 000 000</p>
+                                    <p>email@company.com</p>
+                                </div>
                                 
-                                <div className="heading">
-                                    <FontAwesomeIcon icon={faPhoneAlt} /> 
-                                    <h4>Kontakt</h4>
+                                <div className="column">
+                                    <div className="heading">
+                                        <FontAwesomeIcon icon={faClock} />
+                                        <h4>Pracovná doba</h4>
+                                    </div>
+                                    <p>Pondelok - piatok</p>
+                                    <p>8:00 - 18:00</p>
                                 </div>
-                                <p>0900 000 000</p>
-                                <p>email@company.com</p>
-
-                                <div className="heading">
-                                    <FontAwesomeIcon icon={faClock} />
-                                    <h4>Pracovná doba</h4>
-                                </div>
-                                <p>Pondelok - piatok</p>
-                                <p>8:00 - 18:00</p>
                             </div>
 
                             <div className="form">
@@ -66,18 +73,13 @@ function Contact(){
 
                 <div className="rental section">
                     <div className="container-inner">
-
-                        <h3>Prenájom techniky</h3>
+                        <h2>Prenájom techniky</h2>
 
                         <h1>+421 900 000 000</h1>
                         <p>email@company.com</p>
                     </div>
                 </div>
-
-
             </div>
-
-            <Square />
         </div>
     )
 }

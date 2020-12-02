@@ -29,7 +29,7 @@ function About(){
                     <h2>O nás <Dots /></h2>
 
                     <div className="container-inner">
-                        <h3>Company name</h3>
+                        <h4>Company name</h4>
                         
                         <div className="text">
                             <p>Naša spoločnosť bola založená v roku 2004. Od svojho vzniku sme realizovali desiatky stavebných projektov rôžneho charakteru. Cieľom všetkých našich činností je vždy plné uspokojenie požiadaviek a potrieb zákazníka</p>
@@ -98,7 +98,7 @@ function About(){
                             <div className="standard">
                                 <Standard1 />
                                 <div className="standard-text">
-                                    <h3>Skvelé služby</h3>
+                                    <h4>Skvelé služby</h4>
                                     <p>Môžete sa spoľahnúť na vysokú kvalitu našich prác a dodržiavanie dohodnutých termínov a cien.</p>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@ function About(){
                             <div className="standard">
                                 <Standard2 />
                                 <div className="standard-text">
-                                    <h3>Vysoké štandardy</h3>
+                                    <h4>Vysoké štandardy</h4>
                                     <p>Pri poskytovaní našich služieb sa vždy snažíme postupovať v súlade s požiadavkami noriem ISO a STN</p>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@ function About(){
                             <div className="standard">
                                 <Standard3 />
                                 <div className="standard-text">
-                                    <h3>Tím profesionálov</h3>
+                                    <h4>Tím profesionálov</h4>
                                     <p>Naši zákazníci môžu vždy rátať s vysokou odbornosťou a profesionalitou našich pracovníkov.</p>
                                 </div>
                             </div>
@@ -122,7 +122,7 @@ function About(){
                             <div className="standard">
                                 <Standard4 />
                                 <div className="standard-text">
-                                    <h3>Kreatívne riešenia</h3>
+                                    <h4>Kreatívne riešenia</h4>
                                     <p>Od svojho vzniku sme realizovali desiatky stavebných projektov rôžneho charakteru.</p>
                                 </div>
                             </div>

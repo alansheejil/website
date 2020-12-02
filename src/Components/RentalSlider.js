@@ -59,7 +59,14 @@ function RentalSlider(){
         slidesToScroll:1,
         responsive: [
           {
-            breakpoint: 1100,
+            breakpoint: 1101,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 950,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2

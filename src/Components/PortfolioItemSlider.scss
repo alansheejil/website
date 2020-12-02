@@ -34,11 +34,11 @@ $mainColor : #05a0e3;
     }
     
     #nextSlide{
-        right: -1%;
+        right: -15px;
     }
     
     #prevSlide{
-        left: -1%;
+        left: -15px;
     }
     
     .slick-next::before{
@@ -47,6 +47,16 @@ $mainColor : #05a0e3;
     
     .slick-prev::before{
         content: '';
+    }
+}
+
+/*Media queries*/
+@media screen and (max-width:425px){
+    .portfolioItemSlider{
+        #prevSlide,#nextSlide{
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 

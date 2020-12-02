@@ -18,7 +18,7 @@ import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 //Components
 import RentalSlider from '../Components/RentalSlider';
 
-
+//Intro image
 import introImage from '../Img/rental-intro-excavator.jpg';
 
 function Rental(){
@@ -247,7 +247,7 @@ function Rental(){
             <div className="price-list section">
                 <div className="container">
                     <div className="container-inner">
-                        <h3>Cenník <Square /> </h3>
+                        <h2>Cenník <Square /> </h2>
 
                         <p>Powder jujubes sugar plum bonbon. Caramels gingerbread tootsie roll tart cupcake. Tiramisu sweet roll gummies gingerbread.</p>
 
@@ -259,7 +259,7 @@ function Rental(){
             <div className="reservation section">
                 <div className="container">
                     <div className="container-inner">
-                        <h3>Rezervácia strojov <Square /> </h3>
+                        <h2>Rezervácia strojov <Square /> </h2>
 
                         <h1>+421 900 000 000</h1>
                         <p>email@company.com</p>

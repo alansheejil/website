@@ -58,20 +58,20 @@ function PortfolioItemSlider(){
         slidesToShow:3,
         slidesToScroll:1,
         responsive: [
-            {
-              breakpoint: 1100,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-                breakpoint: 800,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              }
+          {
+            breakpoint: 950,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
         ]
     }
 

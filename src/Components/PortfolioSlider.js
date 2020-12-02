@@ -61,14 +61,21 @@ function PortfolioSlider(){
         variableWidth:true,
         responsive: [
             {
-              breakpoint: 1350,
+              breakpoint: 1100,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                variableWidth:false
               }
             },
             {
-              breakpoint:800,
+              breakpoint:950,
+              settings: {
+                slidesToShow:2,
+                slidesToScroll:2,
+                variableWidth:false
+              }
+            },
+            {
+              breakpoint:500,
               settings: {
                 slidesToShow:1,
                 slidesToScroll:1,
@@ -82,7 +89,8 @@ function PortfolioSlider(){
         <div className="portfolioSlider">
             <Slider {...settings}>
                 <div className="slide">
-                    <img src={SliderImage} alt="portfolio-example" />
+                  <div className="content">
+                  <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
                         <h5>Some construction</h5>
@@ -91,10 +99,13 @@ function PortfolioSlider(){
 
                         <a href="#sa">Zobraziť viac</a>
                     </div>  
+                  </div>
+
                 </div>
 
                 <div className="slide">
-                    <img src={SliderImage} alt="portfolio-example" />
+                  <div className="content">
+                  <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
                         <h5>Some construction</h5>
@@ -103,24 +114,14 @@ function PortfolioSlider(){
 
                         <a href="#sa">Zobraziť viac</a>
                     </div>  
-                </div>
+                  </div>
 
-                
-                <div className="slide">
-                    <img src={SliderImage} alt="portfolio-example" />
-                    <div className="text">
-                        <p>Výstavba</p>
-                        <h5>Some construction</h5>
-
-                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
-
-                        <a href="#sa">Zobraziť viac</a>
-                    </div>  
                 </div>
 
                 
                 <div className="slide">
-                    <img src={SliderImage} alt="portfolio-example" />
+                  <div className="content">
+                  <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
                         <h5>Some construction</h5>
@@ -129,11 +130,14 @@ function PortfolioSlider(){
 
                         <a href="#sa">Zobraziť viac</a>
                     </div>  
+                  </div>
+
                 </div>
 
                 
                 <div className="slide">
-                    <img src={SliderImage} alt="portfolio-example" />
+                  <div className="content">
+                  <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
                         <h5>Some construction</h5>
@@ -142,11 +146,29 @@ function PortfolioSlider(){
 
                         <a href="#sa">Zobraziť viac</a>
                     </div>  
+                  </div>
+
+                </div>
+
+                <div className="slide">
+                  <div className="content">
+                  <img src={SliderImage} alt="portfolio-example" />
+                    <div className="text">
+                        <p>Výstavba</p>
+                        <h5>Some construction</h5>
+
+                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
+
+                        <a href="#sa">Zobraziť viac</a>
+                    </div>  
+                  </div>
+
                 </div>
 
                 
                 <div className="slide">
-                    <img src={SliderImage} alt="portfolio-example" />
+                  <div className="content">
+                  <img src={SliderImage} alt="portfolio-example" />
                     <div className="text">
                         <p>Výstavba</p>
                         <h5>Some construction</h5>
@@ -155,7 +177,9 @@ function PortfolioSlider(){
 
                         <a href="#sa">Zobraziť viac</a>
                     </div>  
-                </div> 
+                  </div>
+
+                </div>
                 
             </Slider>
         </div>

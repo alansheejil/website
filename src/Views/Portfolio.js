@@ -16,6 +16,7 @@ function Portfolio(){
             <div className="container">
                 <div className="intro section">
                     <h2>Portfólio <Dots /></h2>
+                    <Square />
 
                     <div className="container-inner">
                         <div className="text">
@@ -54,11 +55,8 @@ function Portfolio(){
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
-            <Square />
         </div>
     )
 }
