@@ -34,6 +34,43 @@ body{
     padding: 3em 0;
 }
 
+.scrollToTop{
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    width: 2em;
+    height: 2em;
+    fill: white;
+    padding: .5em;
+    border-radius: .4em;
+    background-color: $mainColor;
+    stroke: white;
+    stroke-width:1;
+    z-index: 10;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.showScrollToTop-enter{
+    transform: translateX(200%);
+}
+
+.showScrollToTop-enter-active{
+    transform: translateX(0%);
+    transition: .3s ease-in-out;
+}
+
+.showScrollToTop-exit{
+    transform: translateX(0%);
+}
+
+.showScrollToTop-exit-active{
+    transform: translateX(200%);
+    transition: .3s ease-in-out;
+}
+
 /*Headings and paragraphs*/
 h1{
     font-size: 3em;
@@ -87,7 +124,7 @@ h2{
     z-index: -1;
 }
   
-/*Transitions*/
+/*Views Transitions*/
 /*Slide forward*/
 .slide-forward-enter{
     opacity: 0;

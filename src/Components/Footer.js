@@ -7,7 +7,6 @@ import './Footer.scss';
 import BackToTop from '../Icons/BackToTop';
 
 function Footer(){
-
     //Scroll back to top
     function scrollToTop(){
         window.scrollTo(0,0);

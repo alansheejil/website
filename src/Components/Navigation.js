@@ -12,7 +12,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-function Navigation(){
+function Navigation(props){
     return(
         <nav>
             <div className="container">
@@ -40,7 +40,7 @@ function Navigation(){
                         <NavLink to="/rental">Prenájom stavebnej techniky</NavLink>
                     </div>
                     
-                    <div className="mobile-menu-icon">
+                    <div className="mobile-menu-icon" onClick={()=>props.openMobileMenu()}>
                         <FontAwesomeIcon icon={faBars} />
                     </div>
                 </div>
