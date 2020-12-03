@@ -37,7 +37,7 @@ function Navigation(props){
                     </div>
 
                     <div className="rental">
-                        <NavLink to="/rental">Prenájom stavebnej techniky</NavLink>
+                        <NavLink to="/rental" activeClassName="activeRental">Prenájom stavebnej techniky</NavLink>
                     </div>
                     
                     <div className="mobile-menu-icon" onClick={()=>props.openMobileMenu()}>

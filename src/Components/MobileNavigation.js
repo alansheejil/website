@@ -7,22 +7,17 @@ import {NavLink} from 'react-router-dom';
 import './MobileNavigation.scss';
 
 function MobileNavigation(props){
-    //On click closes menu and scroll to top of the page
-    function closeMenuAndScroll(){
-        props.closeMobileMenu();
-        window.scrollTo(0,0);
-    }
-
     return(
         <div className="mobileMenu">
             <div className="container">
                 <h4>Company name</h4>
 
                 <ul>
-                    <li><NavLink to="/" exact activeClassName="active" onClick={closeMenuAndScroll}>Domov</NavLink></li>
-                    <li><NavLink to="/about" exact activeClassName="active" onClick={closeMenuAndScroll}>O nás</NavLink></li>
-                    <li><NavLink to="/portfolio" exact activeClassName="active" onClick={closeMenuAndScroll}>Portfólio</NavLink></li>
-                    <li><NavLink to="/contact" exact activeClassName="active" onClick={closeMenuAndScroll}>Kontakt</NavLink></li>
+                    <li><NavLink to="/" exact activeClassName="active" onClick={() => props.closeMobileMenu()}>Domov</NavLink></li>
+                    <li><NavLink to="/about" exact activeClassName="active" onClick={() => props.closeMobileMenu()}>O nás</NavLink></li>
+                    <li><NavLink to="/portfolio" exact activeClassName="active" onClick={() => props.closeMobileMenu()}>Portfólio</NavLink></li>
+                    <li><NavLink to="/contact" exact activeClassName="active" onClick={() => props.closeMobileMenu()}>Kontakt</NavLink></li>
+                    <li><NavLink to="/rental" exact activeClassName="active" onClick={() => props.closeMobileMenu()}>Prenájom</NavLink></li>
                 </ul>
             </div>
 

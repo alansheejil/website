@@ -21,7 +21,7 @@ import RentalSlider from '../Components/RentalSlider';
 //Intro image
 import introImage from '../Img/rental-intro-excavator.jpg';
 
-function Rental(){
+function Rental(props){
     return(
         <div className="rentalView">
             <div className="intro section">
@@ -36,7 +36,7 @@ function Rental(){
                         <Square />
                     </div>
 
-                    <NavLink to="/contact">Kontakt</NavLink>
+                    <NavLink to="/contact" onClick={()=>props.scrollToTop()}>Kontakt</NavLink>
                 </div>
 
                 <Circle />

@@ -1,16 +1,14 @@
 import React from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 //Styles
 import './Footer.scss';
 
 //Icons
 import BackToTop from '../Icons/BackToTop';
 
-function Footer(){
-    //Scroll back to top
-    function scrollToTop(){
-        window.scrollTo(0,0);
-    }
+function Footer(props){
     return(
         <div className="footer">
             <div className="container">
@@ -20,22 +18,23 @@ function Footer(){
                     <div className="column-wrapper">
                         <div className="column">
                             <h5>Navigácia</h5>
-                            <a href="#s">Domov</a>
-                            <a href="#s">O nás</a>
-                            <a href="#s">Portfólio</a>
-                            <a href="#s">Kontakt</a>
+                            <NavLink to="/" onClick={props.scrollToTop}>Domov</NavLink>
+                            <NavLink to="/about" onClick={props.scrollToTop}>O nás</NavLink>
+                            <NavLink to="/portfolio" onClick={props.scrollToTop}>Portfólio</NavLink>
+                            <NavLink to="/contact" onClick={props.scrollToTop}>Kontakt</NavLink>
+                            <NavLink to="/rental" onClick={props.scrollToTop}>Prenájom</NavLink>
                         </div>
 
                         <div className="column">
                             <h5>Kontakt</h5>
-                            <a href="#s">0900 000 000</a>
-                            <a href="#s">email@company.com</a>
+                            <a href="tel:0900000000">0900 000 000</a>
+                            <a href="mailto:email@company.com">email@company.com</a>
                         </div>
 
                         <div className="column">
                             <h5>Prenájom techniky</h5>
-                            <a href="#s">0900 000 000</a>
-                            <a href="#s">email@company.com</a>
+                            <a href="tel:0900000000">0900 000 000</a>
+                            <a href="mailto:email@company.com">email@company.com</a>
                         </div>
 
                         <div className="column">
@@ -50,8 +49,8 @@ function Footer(){
                         <p>&copy; Company name</p>
 
                         <div className="back-to-top">
-                            <BackToTop scrollToTop={scrollToTop} />
-                            <p onClick={scrollToTop}>Späť na vrch</p> 
+                            <BackToTop scrollToTop={props.scrollToTop} />
+                            <p onClick={props.scrollToTop}>Späť na vrch</p> 
                         </div>   
                     </div> 
                 </div>

@@ -2,11 +2,14 @@ $mainColor : #05a0e3;
 
 nav{
     overflow-x: hidden;
-    font-size: 1em;
     padding: 1.5em 0;
 
     h3{
         margin:0;
+    }
+
+    .logo{
+        font-size: .7em;
     }
 
     .nav-items{
@@ -57,37 +60,66 @@ nav{
                 a{
                     color: black;
                     text-decoration: none;
+                    position: relative;
 
                     &.active{
                         color:$mainColor;
                     }
                 }
+
+                a:after{
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    background-color: $mainColor;
+                    width: 0;
+                    height: 2px;
+                    transition: all 0.4s;
+                }
+                
+                a:hover:after{
+                    width: 100%;
+                }
             }
         }
 
-        .rental a{
-            border: .12em solid $mainColor;
-            padding: 0.35em 1em;
-            color: $mainColor;
-            text-decoration: none;
-            position: relative;
-            background-color: white;
-
-            &:hover{
+        .rental{
+            .activeRental{
+                color: white;
                 background-color: $mainColor;
-                color:white;
+
+                &::after{
+                    display: none;
+                }
             }
 
-            &::after{
-                content: '';
-                width: 15px;
-                height: 2px;
-                background-color: $mainColor;
-                position: absolute;
-                top:47%;
-                right: -2.5%;
+            a{
+                border: .12em solid $mainColor;
+                padding: 0.35em 1em;
+                color: $mainColor;
+                text-decoration: none;
+                position: relative;
+                background-color: white;
+    
+                &:hover{
+                    background-color: $mainColor;
+                    color:white;
+                }
+    
+                &::after{
+                    content: '';
+                    width: 15px;
+                    height: 2px;
+                    background-color: $mainColor;
+                    position: absolute;
+                    top:47%;
+                    right: -2.5%;
+                }
             }
         }
+
     }
 
     /*Media queries*/

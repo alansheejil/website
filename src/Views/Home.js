@@ -26,7 +26,7 @@ import Square from '../Icons/Square';
 import Circle from '../Icons/Circle';
 import { NavLink } from 'react-router-dom';
 
-function Home(){
+function Home(props){
     return(
         <div className="homeView">
             <Carousel />
@@ -34,7 +34,7 @@ function Home(){
             <div className="container">
                 <div className="rentalOffer">
                     <p>Prenájom špičkovej techniky za super ceny</p>
-                    <NavLink to="/rental">Prenajať</NavLink>
+                    <NavLink to="/rental" onClick={()=>props.scrollToTop()}>Prenajať</NavLink>
                 </div>
 
                 <div className="aboutUs section">
@@ -46,7 +46,7 @@ function Home(){
                             <p>Naša spoločnosť bola založená v roku 2004. Od svojho vzniku sme realizovali desiatky stavebných projektov rôzneho charakteru. Cieľom všetkých našich činností je vždy plné uspokojenie požiadaviek a potrieb zákazníka.</p>
 
                             <div className="showMore">
-                                <NavLink to="/about">Zobraziť viac <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></NavLink>
+                                <NavLink to="/about" onClick={()=>props.scrollToTop()}>Zobraziť viac <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></NavLink>
                             </div>
                         </div>
                     </div>
@@ -65,10 +65,10 @@ function Home(){
                                 <img src={ISO9001} alt="ISO9001 Certificate" />
 
                                 <div className="box">
-                                    <a href="#">Zistiť viac</a>
+                                    <NavLink to="">Zistiť viac</NavLink>
 
                                     <div className="showMore">
-                                        <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                        <NavLink to="">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></NavLink>
                                     </div>
                                 </div>
     
@@ -80,10 +80,10 @@ function Home(){
                                 <img src={ISO14001} alt="ISO14001 Certificate" />
 
                                 <div className="box">
-                                    <a href="#">Zistiť viac</a>
+                                    <NavLink to="">Zistiť viac</NavLink>
 
                                     <div className="showMore">
-                                        <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                        <NavLink to="">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -94,10 +94,10 @@ function Home(){
                                 <img src={ISO18001} alt="ISO18001 Certificate" />
 
                                 <div className="box">
-                                    <a href="#">Zistiť viac</a>
+                                    <NavLink to="">Zistiť viac</NavLink>
 
                                     <div className="showMore">
-                                        <a href="#">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                                        <NavLink to="">Zobraziť certifikát <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -122,7 +122,7 @@ function Home(){
 
                 <div className="container">
                     <h3>Chcete vidieť všetky naše práce? </h3> 
-                    <NavLink to="/portfolio">Zobraziť celé portfólio</NavLink>
+                    <NavLink to="/portfolio" onClick={()=>props.scrollToTop()}>Zobraziť celé portfólio</NavLink>
                 </div>        
             </div>
 
@@ -171,14 +171,12 @@ function Home(){
 
                                     <div className="send">
                                         <FontAwesomeIcon icon={faPaperPlane} />
-                                        <a href="#">Odoslať</a>
+                                        <NavLink to="">Odoslať</NavLink>
                                     </div> 
                                 </form>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
                 <Square />

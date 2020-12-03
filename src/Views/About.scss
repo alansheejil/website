@@ -239,6 +239,12 @@ $mainColor : #05a0e3;
 }
 
 /*Media queries*/
+@media screen and (min-width:1550px){
+    .aboutView{
+        background: none !important;
+    }
+}
+
 @media screen and (max-width:1100px){
     .aboutView{
         .aboutUs{
@@ -277,6 +283,14 @@ $mainColor : #05a0e3;
 
 @media screen and (max-width:830px){
     .aboutView{
+        background-position: 
+        top 0% left 0,
+        top 80% left 0 !important;
+
+        background-size: 
+            120%,
+            150% !important;
+
         .aboutUs{
             .text{
                 margin-left: 0;
@@ -311,7 +325,9 @@ $mainColor : #05a0e3;
 }
 
 @media screen and (max-width:550px){
-	.aboutView{
+	.aboutView{ 
+        background: none;
+
         .aboutUs{
             #triangle{
                 width: 100px;

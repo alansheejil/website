@@ -3,6 +3,9 @@ import React from 'react';
 //Styles
 import './Contact.scss';
 
+//React-router-dom
+import { Link } from 'react-router-dom';
+
 //Font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
@@ -63,7 +66,7 @@ function Contact(){
 
                                     <div className="send">
                                         <FontAwesomeIcon icon={faPaperPlane} />
-                                        <a href="#">Odoslať</a>
+                                        <Link to="">Odoslať</Link>
                                     </div> 
                                 </form>
                             </div>

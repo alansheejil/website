@@ -91,3 +91,27 @@ $mainColor : #05a0e3;
     opacity: 0;
     transition: .3s ease-in-out;
 }
+
+@media screen and (max-width:1100px){
+    .mobileMenu{
+        h4{
+            font-size: 2em;
+        }
+
+        ul{
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .mobileMenu{
+        h4{
+            font-size: 1.7em;
+        }
+
+        ul{
+            font-size: 1.2em;
+        }
+    }
+}

@@ -28,18 +28,32 @@ function App(){
   const [isMobileMenuOpen,setIsMobileMenuOpen] = useState(false);
   const [showScrollToTop,setShowScrollToTop] = useState(false);
 
-  //Detect position from top and show/hide scroll to top button
+  //Detect position from top and show/hide scrollToTop button
+  //If device width is smaller than 1100, don't show scrollToTop button
   function showScrollToTopIcon(){
     let positionY;
+    let windowWidth;
+
     window.addEventListener('scroll',function(){
       positionY = this.scrollY;
+      windowWidth = this.innerWidth;
 
-      if(positionY > 200){
+      if(positionY > 200 && windowWidth < 1100){
         setShowScrollToTop(true);
       }else{
         setShowScrollToTop(false);
       }
     });
+  }
+
+  //Scroll to top for switching between the views
+  function scrollToTop(){
+    window.scrollTo({top:0});
+  }
+
+  //Smooth scroll to top for scrollToTop icon
+  function smoothScrollToTop(){
+    window.scrollTo({top:0,behavior:'smooth'})
   }
 
   return (
@@ -74,7 +88,7 @@ function App(){
               timeout={300}
               unmountOnExit
             >
-              <div className="scrollToTop" onClick={()=>window.scrollTo(0,0)}>
+              <div className="scrollToTop" onClick={smoothScrollToTop}>
                 <BackToTop />
               </div>
             </CSSTransition>
@@ -90,7 +104,7 @@ function App(){
                     unmountOnExit
                     >
                       <div className="page">
-                        <Home />
+                        <Home scrollToTop={scrollToTop} />
                       </div>
 
                   </CSSTransition>
@@ -154,18 +168,16 @@ function App(){
                       unmountOnExit
                       >
                         <div className="page">
-                          <Rental />
+                          <Rental scrollToTop={scrollToTop} />
                         </div>
 
                     </CSSTransition>
                   )}
             </Route>
 
-            <Footer />
+            <Footer scrollToTop={smoothScrollToTop} />
           </div>
         </div>
-
-
     </Router>
   );
 }
